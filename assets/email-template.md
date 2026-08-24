@@ -135,7 +135,7 @@ jordan@northstar.example
 
 ## 3. Follow-up
 
-Full cadence (#3 / breakup): `references/follow-up-sequence.md`. This is touch #2.
+Full cadence (second follow-up, then closing): `references/follow-up-sequence.md`. This is touch #2. Cap: three emails including the first.
 
 ```
 Subject: Following up: {{brand_name}} × {{creator_name}}
@@ -347,6 +347,82 @@ Best,
 
 ---
 
+## 10. Confirm Brief (talking points, not a contract)
+
+Use when they asked for a brief **and** the user has authorized a budget or is not discussing fee yet (seeding). Do not invent fees, exclusivity, or dates.
+
+```
+Subject: Brief for {{handle}} — {{brand_name}}
+
+---
+
+Hi {{creator_name}},
+
+Thanks for being open to this. Here's a one-page direction — talking points, not a script. Keep your usual format.
+
+• Deliverable: {{proposal}}
+• Window: {{timeline}}
+• Talking points: {{content_theme}} + {{value_prop}}
+• Creative: you lead the story; we'll flag any must-say / must-not-say claims
+
+Does this direction work? Happy to adjust before we lock dates.
+
+Best,
+{{sender_name}}
+{{sender_title}}, {{sender_company}}
+{{sender_email}}
+```
+
+Fee line (only if a budget exists): append ` Compensation would be {{fee_range}} unless your rate card suggests a better fit.`
+
+---
+
+## 11. Acknowledge a Rate (hold for budget)
+
+Use when they quoted a number and the user has **not** authorized a matching budget. Do not invent a counter-offer.
+
+```
+Subject: Thanks — reviewing your rate
+
+---
+
+Hi {{creator_name}},
+
+Thank you for sharing your rate. I've noted it and will check with the team so I can come back with a clear next step.
+
+I'll follow up as soon as I have an answer.
+
+Best,
+{{sender_name}}
+{{sender_title}}, {{sender_company}}
+{{sender_email}}
+```
+
+Put their quoted figure under Assumptions. If the user’s budget already covers the rate, skip this template and use Terms instead.
+
+---
+
+## 12. Thank-you After a Decline
+
+Use after a clear no. Then stop — do not send remaining cadence emails.
+
+```
+Subject: Thanks — {{brand_name}}
+
+---
+
+Hi {{creator_name}},
+
+Thanks for the note — completely understood. Wishing you good filming weeks ahead.
+
+Best,
+{{sender_name}}
+```
+
+Do not add “I’ll check back next quarter” unless the user asked.
+
+---
+
 ## Assembly Notes
 
 - Empty `{{fee_range}}`: delete the sentence, or use `Happy to work from your rate card.` Seeding: omit money entirely.
@@ -354,4 +430,5 @@ Best,
 - Ongoing deals: section 8. No exclusivity, MFN, or auto-renewal in a cold email.
 - Greeting: `Hi Maya,` when you have a name; infer from the handle if needed; otherwise `Hi there,` — never `Dear Influencer`. Managers: `Hi {{manager_name}},` — do not address them as the creator.
 - If the user has a brief or shipping-form URL, point the CTA there. Do not request passport, national ID, or bank details in the body.
+- After they reply: thank first, one CTA. Media kit = §9; brief = §10; rate hold = §11; decline = §12. Never invent a counter-offer.
 - Scan the draft for leftover `{{placeholders}}`. Fill what you know; list anything still wrapped in `{{ }}` under Assumptions. Never send a body that still says `{{creator_name}}` as if it were the greeting.

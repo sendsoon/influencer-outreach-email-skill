@@ -1,6 +1,6 @@
 ---
 name: influencer-outreach-email-skill
-description: "Writes copy-paste-ready creator/KOL outreach emails (cold outreach, follow-ups, terms, seeding, affiliate) in English or the creator’s language. Use when the user wants to contact, reach out to, pitch, or partner with a YouTube, Instagram, or TikTok creator — even if they never say write an email. Triggers: influencer outreach, brand collaboration, influencer partnership, KOL邮件, 达人合作, 网红建联, 联系 YouTuber, 寄样测评, 跟进达人. Output Subject + body, not a strategy memo."
+description: "Writes copy-paste-ready creator/KOL outreach emails (cold outreach, follow-ups, terms, seeding, affiliate) in English or the creator’s language. Use when the user wants to contact, reach out to, pitch, or partner with a YouTube, Instagram, or TikTok creator — even if they never say write an email. Triggers: influencer outreach, brand collaboration, influencer partnership, KOL邮件, 达人合作, 网红建联, 联系 YouTuber, 寄样测评, 跟进达人. Output Subject + body."
 ---
 
 # Influencer Outreach Email
@@ -20,13 +20,12 @@ Install paths for humans: `README.md`.
 | Terms | rates, deliverables, dates, usage | terms template in `assets/email-template.md` |
 | Shipment | sample sent, tracking | shipment template in `assets/email-template.md` |
 | Creator replied | yes, rate, manager, no | After They Reply, then the matching template |
-| DM | Instagram / TikTok / YouTube DM | same skill, Channel format |
 
 Iterate subject lines with `references/subject-lines.md`. Affiliate, ongoing, and manager letters: matching sections in `assets/email-template.md`.
 
 ## Workflow
 
-1. **Stage**: cold / follow-up (#2, #3, breakup) / terms / shipment / reply.
+1. **Stage**: cold / follow-up (#2) / closing (#3) / terms / shipment / reply.
 2. **Language + tier**: infer from bio, video language, location, follower count. See Language and Creator Tier. Unknown is fine — do not block.
 3. **Gaps**: read `references/clarification.md`. Ask at most **1–3** blocking questions; otherwise draft with placeholders.
 4. **Load**: platform notes for first touch; follow-up sequence for nudges.
@@ -99,14 +98,14 @@ Never invent fluency. Keep `{{placeholders}}` identical across both drafts.
 
 Infer from a stated follower count, profile, or the user’s label. Do not invent a number.
 
-| Tier | Followers | Channel | First-touch tone |
-|------|-----------|---------|------------------|
-| Nano | <10k | **DM** if no business email | Light, peer. No exclusivity, usage rights, or legal-heavy terms |
-| Micro | 10k–100k | **DM** if no business email; else email | Same as Nano |
-| Mid | 100k–500k | Email default | Current professional tone |
-| Macro / Mega | 500k+ or agency | Email; more formal | Surface a budget range early if the user supplied one |
+| Tier | Followers | First-touch tone |
+|------|-----------|------------------|
+| Nano | <10k | Light, peer. No exclusivity, usage rights, or legal-heavy terms |
+| Micro | 10k–100k | Same as Nano |
+| Mid | 100k–500k | Current professional tone |
+| Macro / Mega | 500k+ or agency | More formal. Surface a budget range early if the user supplied one |
 
-Unknown tier: email + Mid tone; note in Assumptions.
+Unknown tier: Mid tone; note in Assumptions.
 
 ## Follow-up Logic
 
@@ -115,31 +114,64 @@ Use only if there is no reply and no explicit no.
 | Touch | When | Shape |
 |------|------|--------|
 | #1 | Day 0 | Full structure, 80–150 words |
-| #2 | 3–5 days later | Shorter; one new fact (sample, window, brief) |
-| #3 | 4–6 days after #2 | 3–6 sentences; easy decline |
-| #4 breakup | 5–7 days after #3 | Close the loop; then stop |
+| #2 | 3–5 days later | Second follow-up. Shorter; one new fact (sample, window, brief) |
+| #3 | 4–7 days after #2 | Closing note. Close the loop; then stop |
 
-Max four emails per thread. Do not ask “did you get this?” or fake scarcity. Copy: `references/follow-up-sequence.md`.
+Max **three** emails per thread, then stop. Do not ask “did you get this?” or fake scarcity. Copy: `references/follow-up-sequence.md`.
 
 ## After They Reply
 
+A reply is not a new cold email. Thank them in the first sentence, match their length, and ask **one** next thing. Do not stack media kit + brief + call + shipping form in the same note. Do not invent a counter-offer, a priced brief, or a publish date the user never set.
+
+Templates: `assets/email-template.md` (media kit, brief confirm, rate hold, decline thank-you, terms, manager, seeding).
+
+### How to answer
+
+**Interested / “sounds good” / “send more”**
+- No authorized budget: do **not** send Terms or a priced brief. Thank them, then request a media kit, rate card, or 1–2 recent brand collabs so the next note matches how they actually work.
+- Budget already authorized: thank them, restating collab type + platform in one line. If deliverables are already agreed, use Terms. If not, send a short brief (talking points, not a script). One CTA: confirm the direction or reply with changes.
+
+**They ask for a brief**
+- A brief is 4–8 talking points plus the proposed deliverable (e.g. one dedicated integration). It is not a contract and not a feature dump.
+- Include only user-supplied facts: product claims, must-says, banned claims, usage, exclusivity, deadlines. Unknown items stay as placeholders or “I’ll confirm and follow up.”
+- Creative control: they keep their format; you provide talking points, not a word-for-word script unless the user insisted.
+- CTA: `Does this direction work? Happy to adjust before we lock dates.`
+- If budget is still missing, request a media kit **instead of** sending a fake-priced brief.
+
+**They send a rate / rate card**
+- Repeat their figure in the draft so the user sees it. List it under Assumptions.
+- Authorized budget **covers** the rate → thank them and move to Terms with **that** number. Do not round, “improve,” or swap in a different fee.
+- Authorized budget is **below** the rate, or there is **no** budget yet → do **not** invent a counter. Draft a hold: thank them, say you will check with the team, one CTA that you will come back. Then ask the user for an authorized number. Never write “we can do $X” unless the user typed $X.
+
+**They ask product questions or want the brief confirmed**
+- Answer only with user-supplied facts. One question from them → one answer + one CTA (confirm, or send the next asset).
+- Do not add exclusivity, paid usage, or a deadline the user did not authorize.
+
+**Forward to manager / agent**
+- Thank the creator. If the manager’s name or email is missing, ask for it — that is the only CTA. Next email uses the Manager template and that address. Stop treating the personal inbox as the deal inbox.
+
+**Wants the product first / seeding**
+- Use the seeding or shipment template. Do not mix in a paid rate in the same note unless the user asked for a hybrid.
+
+**Timing is off / “maybe later”**
+- Offer **one** window (e.g. 4–6 weeks out). If they do not pick it, stop. Do not restart the three-email cadence.
+
+**Clear no**
+- Optional 2–3 sentence thank-you. Wish them well. No “I’ll check back next quarter” unless the user asked. Do not send remaining cadence emails.
+
 | Signal | Next |
 |--------|------|
-| Interested / wants a brief, **no** user budget range | Request media kit, rate card, or 1–2 recent brand collabs first. Do not jump to Terms. Template: `assets/email-template.md` |
-| Interested / wants a brief, budget already authorized | Terms template; only user-supplied numbers |
-| Rate card / quote received | Do not invent a counter. List the figure in Assumptions; ask for an authorized range |
+| Interested, **no** user budget | Media kit / rate card / recent collabs first. Do not jump to Terms |
+| Interested, budget authorized | Brief (talking points) or Terms — only user-supplied numbers |
+| Rate card / quote received | Repeat the figure; never invent a counter; hold or Terms |
 | Forward to manager / agent | Manager template; stop emailing the personal inbox only |
-| Wants the product first | Seeding / shipment template; do not chase a fee in the same note |
+| Wants the product first | Seeding / shipment; do not chase a fee in the same note |
 | Timing is off | One window 4–6 weeks out, then stop |
-| Clear no | Stop. Optional 2–3 sentence thank-you; no further follow-up |
+| Clear no | Short thank-you; stop |
 
 ## Channel
 
-- User named a channel → that channel.
-- **Nano / Micro** and no business email on file → prefer **DM** (many small creators rarely check email).
-- Otherwise default **email** (Subject + signature).
-- **DMs**: not an email. Use `DM:` instead of `Subject:`, 40–80 words, one CTA, name + brand only — no long signature.
-- This skill drafts copy. It does not send, scrape contacts, or write blast scripts.
+This skill drafts **email** copy (Subject + signature). It does not send, scrape contacts, or write blast scripts.
 
 ## Guardrails
 
@@ -165,13 +197,13 @@ Assumptions / placeholders:
 - ...
 ```
 
-Language bilingual branch: output English first, then the target-language draft with the same structure (`Subject:` + body). DMs: first line is `DM:` not `Subject:`.
+Language bilingual branch: output English first, then the target-language draft with the same structure (`Subject:` + body).
 
 Optional: one alternate subject on a single line.
 
 ## Quality Bar
 
-- [ ] Subject (or DM opener) and full body
+- [ ] Subject and full body
 - [ ] Every `{{placeholder}}` is filled or explicitly left and listed under Assumptions
 - [ ] Opener proves the content was watched, or `{{content_hook}}` is still marked
 - [ ] Brand blurb ≤ 2 sentences

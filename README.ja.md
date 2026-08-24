@@ -2,64 +2,23 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md) | **日本語**
 
-海外クリエイター（YouTube、Instagram、TikTok など）向けのパートナーシップメールを作成します。言語はクリエイターの市場に合わせます（英語、現地語、または両方）。英語専用ではありません。
+海外クリエイター（YouTube、Instagram、TikTok など）とのブランド協業向けに、コピー可能な **Subject + 本文** を作成します。
 
-エージェントは協業の意図（influencer outreach、brand collaboration、「この YouTuber に連絡して」）で起動し、戦略メモではなくコピー可能な **Subject + 本文** を返します。
+**主な機能**
 
-リポジトリ直下**が**スキル本体です。フォルダ名は `influencer-outreach-email-skill` のままにし、`SKILL.md` の `name` と一致させてください。
+- 初回アプローチ：有償協業、シーディング、アフィリエイト、継続案件の第一歩、マネージャー／MCN 宛
+- 未返信時：2 通目のフォロー、最後の締め（同一スレッドは最大 3 通）
+- 条件確認：成果物、公開時期、報酬、利用権
+- サンプル発送・追跡番号の通知
+- 返信後の適切な返答：先に礼を述べ、1 通につき依頼は 1 つ。ブリーフの前にメディアキット／レートカードを依頼。承認済み予算があるときだけ条件確定。勝手に値下げしない。明確な辞退には短い礼で止め、再追わない
 
-## 対象範囲
-
-| 段階 | 内容 |
-|------|------|
-| 初回アプローチ | 有償、シーディング、アフィリエイト、継続案件の第一歩、マネージャー／事務所 |
-| フォローアップ | 未返信時の #2 / #3 / breakup |
-| 条件確認 | 成果物、公開時期、報酬、利用権 |
-| 発送 | サンプルの追跡番号 |
-| 返信後 | メディアキット依頼、ブリーフ、レート、マネージャー転送、辞退 |
-| DM | アプリ内の短い文面。Nano / Micro でメール不明なら優先 |
-
-## 構成
-
-```
-influencer-outreach-email-skill/
-├── SKILL.md                      # エージェント向け手順
-├── README.md                     # インストールと使い方（英語）
-├── README.zh-CN.md               # 中国語
-├── README.ja.md                  # 日本語
-├── references/
-│   ├── subject-lines.md
-│   ├── follow-up-sequence.md
-│   ├── platform-notes.md
-│   └── clarification.md          # 情報が足りないときの確認
-└── assets/
-    └── email-template.md         # プレースホルダと完成例
-```
+1 通につき 1 人のクリエイター。情報が足りなければ最大 1–3 問だけ確認し、残りはプレースホルダで下書きします。
 
 ## インストール
 
-推奨（このリポジトリを取得してスキルをインストール）:
-
 ```bash
 npx skills add sendsoon/influencer-outreach-email-skill
-```
-
-Claude Code と Codex 向けのユーザーレベル（Windows で symlink が失敗する場合は `--copy` を追加）:
-
-```bash
-npx skills add sendsoon/influencer-outreach-email-skill -g -a claude-code -a codex -y
-```
-
-GitHub 上の最新版へ更新:
-
-```bash
 npx skills update influencer-outreach-email-skill
-```
-
-ユーザーレベル:
-
-```bash
-npx skills update influencer-outreach-email-skill -g -y
 ```
 
 ## 例
@@ -67,37 +26,35 @@ npx skills update influencer-outreach-email-skill -g -y
 **入力**
 
 ```
-Brand: Northstar — gooseneck kettle that holds brew temperature within 1°C
-Creator: Maya Chen, YouTube “Weekend Brews”, ~85k, brew-gear reviews
-Watched: water-temperature comparison, 92°C vs 96°C side-by-side
-Collab: paid dedicated integration
-Recipient: Maya
-Fee: USD 3,500–4,500
-CTA: short reply
+ブランド：SendSoon — SendGrid / Klaviyo より安い海外 EDM
+クリエイター：Arun Maini、YouTube「Mrwhosetheboss」（@Mrwhosetheboss）、約 2,280 万、テックレビュー
+視聴：Google Pixel 11 Hands on — The Phone Crisis Begins。「無線充電 29% 高速」は小さい Pro のみ、XL は注記で 17%
+協業：有償インテグレーション 1 本 + アフィリエイト
+宛先：Arun 本人
+報酬：USD 100–500
+コミッション：10%、Cookie 30 日
+CTA：短い返信で十分
+ブランド URL：https://sendsoonai.com/
+差出人：Charles Zhou, Partnerships, SendSoon, charles@mail.sendsoonai.com
 ```
 
 **出力**
 
 ```
-Subject: Maya — idea for a Northstar collab
+Subject: Arun — Pixel 11 small print + SendSoon
 
 ---
 
-Hi Maya,
+Hi Arun,
 
-I watched your water-temperature comparison — the 92°C vs 96°C side-by-side is exactly the kind of test we built the Northstar kettle around.
+I watched your Pixel 11 hands-on — catching that the “29% faster wireless charging” only applies to the smaller Pro, while the XL is 17% in the small print, is exactly the kind of test we’d want to keep.
 
-Northstar makes a temperature-stable gooseneck kettle — it holds within 1°C so brew recipes are repeatable at home. I'm reaching out about a paid collaboration with Weekend Brews: one dedicated integration in a brew-gear video. You'd keep your usual test format; we'd provide talking points, not a script. We had USD 3,500–4,500 in mind, and I'm open to a number that fits your rate card.
+SendSoon is an overseas EDM platform — email infrastructure for campaigns and transactional mail, typically around 60% of comparable SendGrid cost and about 80% of comparable Klaviyo (https://sendsoonai.com/). I'm reaching out about a paid + affiliate collaboration with Mrwhosetheboss: one dedicated integration. You'd keep your usual review format; we'd provide talking points and a unique link, not a script. We had USD 100–500 plus 10% commission on referred sales (30-day cookie) in mind.
 
 If this is relevant, a short reply is enough. I can send a one-page brief with talking points (not a rigid script).
 
 Best,
-Jordan Hale
-Partnerships, Northstar
-jordan@northstar.example
-
----
-
-Assumptions / placeholders:
-- None
+Charles Zhou
+Partnerships, SendSoon
+charles@mail.sendsoonai.com
 ```

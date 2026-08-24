@@ -1,15 +1,14 @@
 # Follow-up Sequence
 
-No reply is not a no. Follow-ups are short, add one new fact, and do not pressure. Default cap: **four** emails including the first, then stop.
+No reply is not a no. Follow-ups are short, add one new fact, and do not pressure. Default cap: **three** emails including the first, then stop.
 
 ## Cadence
 
 | Touch | When | Goal | Length |
 |------|------|------|--------|
 | #1 cold | Day 0 | Relevance + proposal | 80–150 words |
-| #2 | Day 3–5 | Get seen; one new value | 50–80 words |
-| #3 | 4–6 days after #2 (~Day 8–11) | Lower the cost of a reply | 3–6 sentences |
-| #4 breakup | 5–7 days after #3 (~Day 14–18) | Close politely; leave a door | 3–5 sentences |
+| #2 follow-up | Day 3–5 | Get seen; one new value | 50–80 words |
+| #3 closing | 4–7 days after #2 (~Day 8–12) | Close politely; leave a door | 3–5 sentences |
 
 Send Tue–Thu morning in the creator’s timezone when known. Never invent “I timed this to your morning.”
 
@@ -18,8 +17,7 @@ If they said “looking” or “forwarding to my manager,” follow *their* clo
 ## Tone Shift
 
 - **#2**: Still professional, shorter. Do not paste the first email. Add **one** new fact (sample, window, brief, deliverable flexibility).
-- **#3**: Lighter. Easy out: `If the timing is off, no need to reply.`
-- **#4**: Close the thread. No guilt, no implied rudeness, no fake deadline.
+- **#3**: Close the thread. No guilt, no implied rudeness, no fake deadline. Easy out is already the close.
 
 Never: `Did you see my last email?`, a lone `Just bumping this`, read-receipt pressure, `I'll keep following up`, countdown copy.
 
@@ -49,24 +47,7 @@ Best,
 
 `{{new_info}}` examples: `we can ship a sample this week` / `April still has two integration slots` / `usage would be organic-only unless you prefer otherwise`.
 
-### Follow-up #3
-
-```
-Subject: Checking in on the {{brand_name}} idea
-
----
-
-Hi {{creator_name}},
-
-Last note from me on this: would a {{collab_type}} with {{brand_name}} be relevant for {{handle}} in the next {{timeline}}?
-
-If it's not a fit or the timing is off, no need to reply — I won't keep chasing.
-
-Best,
-{{sender_name}}
-```
-
-### Follow-up #4 (breakup)
+### Follow-up #3 (closing)
 
 ```
 Subject: Closing the loop — {{brand_name}}
@@ -103,7 +84,26 @@ Jordan Hale
 Partnerships, Northstar
 ```
 
+## Filled Example (#3 closing)
+
+```
+Subject: Closing the loop — Northstar
+
+---
+
+Hi Maya,
+
+I'll close the loop on the Northstar idea so I don't add noise.
+
+If a paid integration becomes useful later, I'm easy to reach at jordan@northstar.example. Wishing you good filming weeks ahead.
+
+Best,
+Jordan Hale
+```
+
 ## Soft Replies
+
+If they replied, this cadence is over. How to answer: After They Reply in `SKILL.md`.
 
 | Signal | Next email |
 |--------|------------|
@@ -118,4 +118,4 @@ Partnerships, Northstar
 - Follow-up subjects differ from the first email. Do not fake a thread with `Re:`.
 - One CTA per email.
 - Do not switch collab type (paid → free seeding) unless the user asked; if you do, name the change.
-- Once terms are in play, do not send a breakup email.
+- Once they have replied, or terms are in play, do not send a closing cadence email.

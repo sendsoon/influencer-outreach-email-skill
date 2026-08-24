@@ -62,8 +62,6 @@ If the platform is unspecified:
 
 Multi-platform packages: one sentence of scope (`YouTube integration + 2 TikToks`). Leave SOW detail for the reply.
 
-Nano / Micro with no business email: prefer in-app DM (see Channel in `SKILL.md`).
-
 ## Personalization Cheat Sheet
 
 | Input | Use it in |
