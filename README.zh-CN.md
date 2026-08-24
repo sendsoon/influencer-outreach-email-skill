@@ -37,9 +37,21 @@ influencer-outreach-email-skill/
 
 ## 安装
 
-将 `SKILL.md`、`README.md`（需要本地化文档时一并复制 `README.zh-CN.md` / `README.ja.md`）、`references/`、`assets/` 拷入客户端会扫描的 skills 目录。`SKILL.md` 必须位于 Skill 文件夹根目录。安装后请新开 Agent 会话（Codex 需重启）。
+推荐（克隆本仓库并安装 Skill）：
 
-以下命令在本仓库根目录执行。Windows 用 PowerShell，macOS / Linux 用 bash。
+```bash
+npx skills add sendsoon/influencer-outreach-email-skill
+```
+
+用户级安装到 Claude Code 与 Codex（Windows 若 symlink 失败请加 `--copy`）：
+
+```bash
+npx skills add sendsoon/influencer-outreach-email-skill -g -a claude-code -a codex -y
+```
+
+手动安装时，将 `SKILL.md`、`README.md`（需要本地化文档时一并复制 `README.zh-CN.md` / `README.ja.md`）、`references/`、`assets/` 拷入客户端会扫描的 skills 目录。`SKILL.md` 必须位于 Skill 文件夹根目录。安装后请新开 Agent 会话（Codex 需重启）。
+
+以下手动命令在本仓库根目录执行。Windows 用 PowerShell，macOS / Linux 用 bash。
 
 ### 路径
 
@@ -100,11 +112,10 @@ cp -R references assets ~/.claude/skills/influencer-outreach-email-skill/
 
 ### 其他 Agent
 
-按该产品文档中的 skills 目录拷贝本文件夹（遵循 Agent Skills 规范）。若本仓库已在 GitHub：
+按该产品文档中的 skills 目录拷贝本文件夹（遵循 Agent Skills 规范），或：
 
 ```bash
-npx skills add <owner/repo> --agent claude
-npx skills add <owner/repo>
+npx skills add sendsoon/influencer-outreach-email-skill
 ```
 
 用户级安装加 `-g`。`--agent` 取值以 `npx skills --help` 为准。

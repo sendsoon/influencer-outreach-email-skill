@@ -37,9 +37,21 @@ influencer-outreach-email-skill/
 
 ## Install
 
-Copy `SKILL.md`, `README.md` (plus `README.zh-CN.md` / `README.ja.md` if you want localized docs), `references/`, and `assets/` into a skills directory the client scans. `SKILL.md` must sit at the skill-folder root. Start a new agent session afterward (restart Codex).
+Recommended (clones this repo and installs the skill):
 
-Run the commands from this repo root. PowerShell on Windows; bash on macOS/Linux.
+```bash
+npx skills add sendsoon/influencer-outreach-email-skill
+```
+
+User-level for Claude Code and Codex (Windows: add `--copy` if symlinks fail):
+
+```bash
+npx skills add sendsoon/influencer-outreach-email-skill -g -a claude-code -a codex -y
+```
+
+To install by hand, copy `SKILL.md`, `README.md` (plus `README.zh-CN.md` / `README.ja.md` if you want localized docs), `references/`, and `assets/` into a skills directory the client scans. `SKILL.md` must sit at the skill-folder root. Start a new agent session afterward (restart Codex).
+
+Run the manual commands from this repo root. PowerShell on Windows; bash on macOS/Linux.
 
 ### Paths
 
@@ -100,11 +112,10 @@ Slash command: `/influencer-outreach-email-skill`. If it is missing, `/reload-pl
 
 ### Other agents
 
-Copy the folder into that product’s documented skills directory (Agent Skills spec). If this repo is on GitHub:
+Copy the folder into that product’s documented skills directory (Agent Skills spec), or:
 
 ```bash
-npx skills add <owner/repo> --agent claude
-npx skills add <owner/repo>
+npx skills add sendsoon/influencer-outreach-email-skill
 ```
 
 Use `-g` for user-level install. Confirm `--agent` values with `npx skills --help`.

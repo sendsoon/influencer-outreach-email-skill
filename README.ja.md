@@ -37,9 +37,21 @@ influencer-outreach-email-skill/
 
 ## インストール
 
-`SKILL.md`、`README.md`（ローカライズ版が必要なら `README.zh-CN.md` / `README.ja.md` も）、`references/`、`assets/` を、クライアントがスキャンする skills ディレクトリへコピーします。`SKILL.md` はスキルフォルダの直下に置いてください。インストール後は新しいエージェントセッションを開始します（Codex は再起動）。
+推奨（このリポジトリを取得してスキルをインストール）:
 
-コマンドは本リポジトリのルートで実行します。Windows は PowerShell、macOS / Linux は bash です。
+```bash
+npx skills add sendsoon/influencer-outreach-email-skill
+```
+
+Claude Code と Codex 向けのユーザーレベル（Windows で symlink が失敗する場合は `--copy` を追加）:
+
+```bash
+npx skills add sendsoon/influencer-outreach-email-skill -g -a claude-code -a codex -y
+```
+
+手動インストールでは、`SKILL.md`、`README.md`（ローカライズ版が必要なら `README.zh-CN.md` / `README.ja.md` も）、`references/`、`assets/` を、クライアントがスキャンする skills ディレクトリへコピーします。`SKILL.md` はスキルフォルダの直下に置いてください。インストール後は新しいエージェントセッションを開始します（Codex は再起動）。
+
+以下の手動コマンドは本リポジトリのルートで実行します。Windows は PowerShell、macOS / Linux は bash です。
 
 ### パス
 
@@ -100,11 +112,10 @@ cp -R references assets ~/.claude/skills/influencer-outreach-email-skill/
 
 ### その他のエージェント
 
-各製品ドキュメントの skills ディレクトリへこのフォルダをコピーします（Agent Skills 仕様）。リポジトリが GitHub にある場合:
+各製品ドキュメントの skills ディレクトリへこのフォルダをコピーするか、次を実行します（Agent Skills 仕様）:
 
 ```bash
-npx skills add <owner/repo> --agent claude
-npx skills add <owner/repo>
+npx skills add sendsoon/influencer-outreach-email-skill
 ```
 
 ユーザーレベルは `-g`。`--agent` の値は `npx skills --help` で確認してください。
