@@ -15,9 +15,9 @@ Always include a `Subject:` line. Format: `SKILL.md` → Output Format.
 | `{{handle}}` | Channel name or @handle |
 | `{{platform}}` | YouTube / Instagram / TikTok |
 | `{{content_hook}}` | A real piece of content plus a concrete detail |
-| `{{content_theme}}` | Usual topics, e.g. brew gear reviews |
-| `{{new_info}}` | Follow-up increment (sample, window, brief) |
-| `{{collab_type}}` | paid collaboration / product seeding / affiliate / ongoing partnership |
+| `{{content_theme}}` | Usual topics, e.g. tech reviews |
+| `{{new_info}}` | Follow-up increment (sample, window, brief, unique link) |
+| `{{collab_type}}` | paid collaboration / product seeding / affiliate / paid + affiliate / ongoing partnership |
 | `{{proposal}}` | One-line deliverable, e.g. one dedicated integration |
 | `{{creator_value}}` | Fee, product, creative control, audience fit |
 | `{{fee_range}}` | Only if the user supplied it; otherwise delete the sentence |
@@ -35,7 +35,7 @@ Always include a `Subject:` line. Format: `SKILL.md` → Output Format.
 | `{{manager_name}}` | Agent / MCN greeting |
 | `{{affiliate_terms}}` | Affiliate: commission and cookie window (user-supplied) |
 
-Northstar filled examples teach tone. Do not copy their product specs, fees, or dates onto a real brand.
+Paid, affiliate, follow-up, and terms filled examples use SendSoon × Mrwhosetheboss. Copy tone, not fees or dates, onto a different brand. Seeding filled examples are a physical product only — never mix them into a SaaS pitch.
 
 ---
 
@@ -52,7 +52,7 @@ Hi {{creator_name}},
 
 {{brand_name}} makes {{product_name}} — {{value_prop}}. I'm reaching out about a {{collab_type}} with {{handle}}: {{proposal}}. {{creator_value}}{{fee_range}}
 
-If this is relevant, {{cta}}. I can send a one-page brief with talking points (not a rigid script).
+If this is relevant, {{cta}}.
 
 Best,
 {{sender_name}}
@@ -62,34 +62,34 @@ Best,
 
 Fee line (only if a budget exists), appended after value: ` We had {{fee_range}} in mind, and I'm open to a number that fits your rate card.`
 
-Default CTA: `a short reply is enough`. Call CTA only if requested: `a 15-minute call works — here's my calendar: {{calendar_link}}`.
+Default CTA: `a short reply is enough`. Do not add a second CTA (brief, call, or link) unless that is the only CTA the user asked for. Call CTA only if requested: `a 15-minute call works — here's my calendar: {{calendar_link}}`.
 
 ### Filled example
 
 ```
-Subject: Maya — idea for a Northstar collab
+Subject: Arun — Pixel 11 small print + SendSoon
 
 ---
 
-Hi Maya,
+Hi Arun,
 
-I watched your water-temperature comparison — the 92°C vs 96°C side-by-side is exactly the kind of test we built the Northstar kettle around.
+I watched your Pixel 11 hands-on — catching that the “29% faster wireless charging” only applies to the smaller Pro, while the XL is 17% in the small print, is exactly the kind of test we’d want to keep.
 
-Northstar makes a temperature-stable gooseneck kettle — it holds within 1°C so brew recipes are repeatable at home. I'm reaching out about a paid collaboration with Weekend Brews: one dedicated integration in a brew-gear video. You'd keep your usual test format; we'd provide talking points, not a script. We had USD 3,500–4,500 in mind, and I'm open to a number that fits your rate card.
+SendSoon is an overseas EDM platform — email infrastructure for campaigns and transactional mail, typically around 60% of comparable SendGrid cost and about 80% of comparable Klaviyo (https://sendsoonai.com/). I'm reaching out about a paid + affiliate collaboration with Mrwhosetheboss: one dedicated integration. You'd keep your usual review format; we'd provide talking points and a unique link, not a script. We had USD 100–500 plus 10% commission on referred sales (30-day cookie) in mind.
 
-If this is relevant, a short reply is enough. I can send a one-page brief with talking points (not a rigid script).
+If this is relevant, a short reply is enough.
 
 Best,
-Jordan Hale
-Partnerships, Northstar
-jordan@northstar.example
+Charles Zhou
+Partnerships, SendSoon
+charles@mail.sendsoonai.com
 ```
 
 ---
 
 ## 2. First Outreach — Product Seeding
 
-Seeding is try-and-see, not a paid ad. No posting requirement.
+Seeding is try-and-see, not a paid ad. No posting requirement. **Physical product only** — do not reuse this example on SendSoon or any SaaS brand.
 
 ```
 Subject: {{brand_name}} × {{creator_name}}: product seeding
@@ -135,7 +135,7 @@ jordan@northstar.example
 
 ## 3. Follow-up
 
-Full cadence (second follow-up, then closing): `references/follow-up-sequence.md`. This is touch #2. Cap: three emails including the first.
+Full cadence (second follow-up, then closing): `references/follow-up-sequence.md`. Cap: three emails including the first. This section is touch #2.
 
 ```
 Subject: Following up: {{brand_name}} × {{creator_name}}
@@ -148,31 +148,50 @@ I know inbox volume is high, so I wanted to send a shorter note.
 
 We're still interested in a {{collab_type}} around {{content_theme}}. One update: {{new_info}}.
 
-If useful, I can send a one-page brief — just reply and I'll share it.
+If the timing is off, no need to reply. If useful, a short reply is enough.
 
 Best,
 {{sender_name}}
 {{sender_title}}, {{sender_company}}
 ```
 
-### Filled example
+### Filled example (#2)
 
 ```
-Subject: Following up: Northstar × Maya
+Subject: Following up: SendSoon × Arun
 
 ---
 
-Hi Maya,
+Hi Arun,
 
 I know inbox volume is high, so I wanted to send a shorter note.
 
-We're still interested in a paid integration around your brew-gear reviews. One update: we can ship the kettle this week so you'd have time to test before filming.
+We're still interested in a paid + affiliate integration around your tech reviews. One update: we can share a unique link and a one-page talking-points list as soon as you want them.
 
-If useful, I can send a one-page brief — just reply and I'll share it.
+If the timing is off, no need to reply. If useful, a short reply is enough.
 
 Best,
-Jordan Hale
-Partnerships, Northstar
+Charles Zhou
+Partnerships, SendSoon
+```
+
+### Touch #3 (closing)
+
+Copy: `references/follow-up-sequence.md`. Do not send a “checking in” email between #2 and #3.
+
+```
+Subject: Closing the loop — {{brand_name}}
+
+---
+
+Hi {{creator_name}},
+
+I'll close the loop on the {{brand_name}} idea so I don't add noise.
+
+If a {{collab_type}} becomes useful later, I'm easy to reach at {{sender_email}}. Wishing you good filming weeks ahead.
+
+Best,
+{{sender_name}}
 ```
 
 ---
@@ -207,26 +226,26 @@ Best,
 ### Filled example
 
 ```
-Subject: Confirming deliverables and timeline — Northstar
+Subject: Confirming deliverables and timeline — SendSoon
 
 ---
 
-Hi Maya,
+Hi Arun,
 
-Thank you for being open to a paid collaboration with Northstar. I'm writing to confirm the details so we're aligned before anything goes live.
+Thank you for being open to a paid + affiliate collaboration with SendSoon. I'm writing to confirm the details so we're aligned before anything goes live.
 
-• Deliverables: 1 YouTube integration (60–90 seconds) in a brew-gear video, plus one community post on publish day
-• Target publish window: 14–30 April
-• Compensation: USD 4,000, paid within 14 days of the video going live
+• Deliverables: 1 dedicated YouTube integration; unique affiliate link
+• Target publish window: to confirm after you reply
+• Compensation: USD 100–500 plus 10% commission on referred sales (30-day cookie)
 • Usage: organic posting on your channel only; no paid amplification or whitelisting
 • Disclosure: paid partnership disclosure per YouTube rules
 
-Please reply to confirm or mark anything that should change. Once this is locked, I'll send the brief and shipping details next.
+Please reply to confirm or mark anything that should change. Once this is locked, I'll send the talking points and affiliate link next.
 
 Best,
-Jordan Hale
-Partnerships, Northstar
-jordan@northstar.example
+Charles Zhou
+Partnerships, SendSoon
+charles@mail.sendsoonai.com
 ```
 
 ---
@@ -289,7 +308,7 @@ I'm reaching out about a possible {{collab_type}} between {{brand_name}} and {{c
 
 {{brand_name}} makes {{product_name}} — {{value_prop}}. Proposal: {{proposal}}. {{creator_value}}{{fee_range}}
 
-If you represent this creator for brand deals, {{cta}}. Happy to send a one-page brief.
+If you represent this creator for brand deals, {{cta}}.
 
 Best,
 {{sender_name}}
@@ -326,7 +345,7 @@ Best,
 
 ## 9. Request Media Kit / Recent Work (before terms)
 
-Use when they are interested but the user has not authorized a budget range. Do not send Terms in the same note.
+Use when they are interested, they have **not** sent a rate, and the user has not authorized a budget range. Do not send Terms in the same note. If they already quoted, use §11 instead.
 
 ```
 Subject: {{brand_name}} — media kit / recent collabs?
@@ -349,7 +368,7 @@ Best,
 
 ## 10. Confirm Brief (talking points, not a contract)
 
-Use when they asked for a brief **and** the user has authorized a budget or is not discussing fee yet (seeding). Do not invent fees, exclusivity, or dates.
+Use when they asked for a brief **and** the user has authorized a budget, or this is seeding (no fee). For a paid collab with no authorized budget, use §9, not this template. Do not invent fees, exclusivity, or dates.
 
 ```
 Subject: Brief for {{handle}} — {{brand_name}}
@@ -428,7 +447,7 @@ Do not add “I’ll check back next quarter” unless the user asked.
 - Empty `{{fee_range}}`: delete the sentence, or use `Happy to work from your rate card.` Seeding: omit money entirely.
 - Affiliate: only numbers inside `{{affiliate_terms}}`. If none, write `happy to share the current affiliate terms` and flag the missing rate in Assumptions.
 - Ongoing deals: section 8. No exclusivity, MFN, or auto-renewal in a cold email.
-- Greeting: `Hi Maya,` when you have a name; infer from the handle if needed; otherwise `Hi there,` — never `Dear Influencer`. Managers: `Hi {{manager_name}},` — do not address them as the creator.
+- Greeting: `Hi Arun,` when you have a name; infer from the handle if needed; otherwise `Hi there,` — never `Dear Influencer`. Managers: `Hi {{manager_name}},` — do not address them as the creator.
+- One CTA per email. After they reply: thank first. Media kit = §9 (no quote yet); brief = §10; rate hold = §11 (they already quoted); decline = §12. Never invent a counter-offer.
 - If the user has a brief or shipping-form URL, point the CTA there. Do not request passport, national ID, or bank details in the body.
-- After they reply: thank first, one CTA. Media kit = §9; brief = §10; rate hold = §11; decline = §12. Never invent a counter-offer.
 - Scan the draft for leftover `{{placeholders}}`. Fill what you know; list anything still wrapped in `{{ }}` under Assumptions. Never send a body that still says `{{creator_name}}` as if it were the greeting.

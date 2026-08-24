@@ -38,7 +38,7 @@ I know inbox volume is high, so I wanted to send a shorter note.
 
 We're still interested in a {{collab_type}} around {{content_theme}}. One update: {{new_info}}.
 
-If useful, I can send a one-page brief — just reply and I'll share it.
+If the timing is off, no need to reply. If useful, a short reply is enough.
 
 Best,
 {{sender_name}}
@@ -67,38 +67,38 @@ Best,
 ## Filled Example (#2)
 
 ```
-Subject: Following up: Northstar × Maya
+Subject: Following up: SendSoon × Arun
 
 ---
 
-Hi Maya,
+Hi Arun,
 
 I know inbox volume is high, so I wanted to send a shorter note.
 
-We're still interested in a paid integration around your brew-gear reviews. One update: we can ship the kettle this week so you'd have time to test before filming.
+We're still interested in a paid + affiliate integration around your tech reviews. One update: we can share a unique link and a one-page talking-points list as soon as you want them.
 
-If useful, I can send a one-page brief — just reply and I'll share it.
+If the timing is off, no need to reply. If useful, a short reply is enough.
 
 Best,
-Jordan Hale
-Partnerships, Northstar
+Charles Zhou
+Partnerships, SendSoon
 ```
 
 ## Filled Example (#3 closing)
 
 ```
-Subject: Closing the loop — Northstar
+Subject: Closing the loop — SendSoon
 
 ---
 
-Hi Maya,
+Hi Arun,
 
-I'll close the loop on the Northstar idea so I don't add noise.
+I'll close the loop on the SendSoon idea so I don't add noise.
 
-If a paid integration becomes useful later, I'm easy to reach at jordan@northstar.example. Wishing you good filming weeks ahead.
+If a paid + affiliate integration becomes useful later, I'm easy to reach at charles@mail.sendsoonai.com. Wishing you good filming weeks ahead.
 
 Best,
-Jordan Hale
+Charles Zhou
 ```
 
 ## Soft Replies
@@ -107,10 +107,10 @@ If they replied, this cadence is over. How to answer: After They Reply in `SKILL
 
 | Signal | Next email |
 |--------|------------|
-| Interested, no user budget | Request media kit / rate card / recent collabs first; do not jump to Terms |
+| Interested, no quote yet, **no** user budget | Request media kit / rate card / recent collabs first; do not jump to Terms |
 | Forward to manager / agent | Thank them; ask for the manager’s address. Stop using only the personal inbox |
 | Wants the product first | Seeding / shipment template; do not chase a fee in the same note |
-| Rate too high / too low | Do not invent a counter. If no authorized budget, request media kit first; otherwise Terms with user numbers only |
+| Rate / rate card received | Do not invent a counter. Repeat their figure. No matching authorized budget → rate-hold template (`assets/email-template.md` §11) and ask the user. Budget covers the quote → Terms. Do **not** request a media kit after they have already quoted |
 | Busy now | One window (e.g. 4–6 weeks), one confirmation, then stop |
 
 ## Sequence Hygiene

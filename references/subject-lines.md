@@ -36,10 +36,18 @@ Use these when you cannot write a content-specific original. Do not default to #
 
 ### Follow-up
 
+Cadence #2:
+
 8. `Following up: {{brand_name}} × {{creator_name}}`
-9. `Checking in on the {{brand_name}} idea`
-10. `Still relevant: {{collab_type}} with {{brand_name}}`
-11. `Closing the loop — {{brand_name}}`
+
+Cadence #3 (last email, then stop):
+
+9. `Closing the loop — {{brand_name}}`
+
+Do **not** send a middle “checking in” as a fourth email. These two are only if the user asked for extra wording after the creator already replied:
+
+- `Checking in on the {{brand_name}} idea`
+- `Still relevant: {{collab_type}} with {{brand_name}}`
 
 ### Terms
 
@@ -56,12 +64,13 @@ Use these when you cannot write a content-specific original. Do not default to #
 
 | Scene | Subject |
 |------|---------|
-| YouTube paid integration | `Maya — idea for a Northstar collab` |
-| Named video | `Quick note on your water-temp video + Northstar` |
-| Instagram seeding | `Northstar × @maya.brews: product seeding` |
-| TikTok paid integration | `Paid integration idea for @maya.brews` |
-| Follow-up #2 | `Following up: Northstar × Maya` |
-| Terms | `Confirming deliverables and timeline — Northstar` |
+| YouTube paid + affiliate | `Arun — Pixel 11 small print + SendSoon` |
+| Named video | `Quick note on your Pixel 11 hands-on + SendSoon` |
+| Instagram seeding (physical product) | `{{brand_name}} × {{handle}}: product seeding` |
+| TikTok paid integration | `Paid integration idea for {{handle}}` |
+| Follow-up #2 | `Following up: SendSoon × Arun` |
+| Closing #3 | `Closing the loop — SendSoon` |
+| Terms | `Confirming deliverables and timeline — SendSoon` |
 
 ## Quick Test
 

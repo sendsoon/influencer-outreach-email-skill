@@ -16,7 +16,8 @@ Install paths for humans: `README.md`.
 | Stage | Signals | Load |
 |------|---------|------|
 | Cold outreach | first contact, pitch, intro | `assets/email-template.md` + `references/platform-notes.md` |
-| Follow-up | no reply, nudge | `references/follow-up-sequence.md` |
+| Follow-up | no reply, nudge, second email | `references/follow-up-sequence.md` (#2) |
+| Closing | last note after #2, close the loop | `references/follow-up-sequence.md` (#3) |
 | Terms | rates, deliverables, dates, usage | terms template in `assets/email-template.md` |
 | Shipment | sample sent, tracking | shipment template in `assets/email-template.md` |
 | Creator replied | yes, rate, manager, no | After They Reply, then the matching template |
@@ -54,7 +55,7 @@ Cold outreach: **80–150 words** (TikTok: 70–110).
 
 Do not: long brand stories, multiple CTAs, attachment dumps, or “let’s hop on a 30-min call” unless requested.
 
-Templates: `assets/email-template.md`. Northstar filled examples teach tone only — never copy their specs, fees, or dates onto a real brand.
+Templates: `assets/email-template.md`. Paid / affiliate / follow-up / terms filled examples use SendSoon × Mrwhosetheboss — copy tone, not their fees or dates onto a different brand. Seeding filled examples are a physical product only; never mix kettle copy into a SaaS pitch.
 
 ## Subject Lines
 
@@ -78,7 +79,7 @@ Friendly, professional, peer-level — Partnerships, not a sales bot.
 
 Avoid: `game-changing`, `once-in-a-lifetime`, `we'd be honored`, `synergy`, `crush it`, fake intimacy (`Hey bestie`), excessive apology, emoji, ALL CAPS.
 
-Follow-ups are shorter and low-pressure; include an easy out.
+Follow-up #2 is shorter and low-pressure; include an easy out. #3 is the close — do not send a fourth “checking in” email.
 
 Adjust formality by Creator Tier. Do not put exclusivity or usage-rights clauses in a Nano/Micro cold email.
 
@@ -161,7 +162,7 @@ Templates: `assets/email-template.md` (media kit, brief confirm, rate hold, decl
 
 | Signal | Next |
 |--------|------|
-| Interested, **no** user budget | Media kit / rate card / recent collabs first. Do not jump to Terms |
+| Interested, **no** user budget, no quote yet | Media kit / rate card / recent collabs first. Do not jump to Terms |
 | Interested, budget authorized | Brief (talking points) or Terms — only user-supplied numbers |
 | Rate card / quote received | Repeat the figure; never invent a counter; hold or Terms |
 | Forward to manager / agent | Manager template; stop emailing the personal inbox only |

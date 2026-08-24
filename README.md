@@ -51,10 +51,15 @@ I watched your Pixel 11 hands-on — catching that the “29% faster wireless ch
 
 SendSoon is an overseas EDM platform — email infrastructure for campaigns and transactional mail, typically around 60% of comparable SendGrid cost and about 80% of comparable Klaviyo (https://sendsoonai.com/). I'm reaching out about a paid + affiliate collaboration with Mrwhosetheboss: one dedicated integration. You'd keep your usual review format; we'd provide talking points and a unique link, not a script. We had USD 100–500 plus 10% commission on referred sales (30-day cookie) in mind.
 
-If this is relevant, a short reply is enough. I can send a one-page brief with talking points (not a rigid script).
+If this is relevant, a short reply is enough.
 
 Best,
 Charles Zhou
 Partnerships, SendSoon
 charles@mail.sendsoonai.com
+
+---
+
+Assumptions / placeholders:
+- None
 ```

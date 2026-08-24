@@ -8,7 +8,7 @@ Change the opener and the proposal by platform. Do not reuse “your amazing con
 
 **Opener:** name a **specific video title** plus a checkable detail (method, chapter, conclusion) — not just the niche.
 
-> Watched your water-temperature comparison — the 92°C vs 96°C side-by-side is the kind of test our kettle is built for.
+> Watched your Pixel 11 hands-on — catching that the “29% faster wireless charging” only applies to the smaller Pro, while the XL is 17% in the small print.
 
 **State in the proposal:**
 
@@ -25,7 +25,7 @@ Change the opener and the proposal by platform. Do not reuse “your amazing con
 
 **Opener:** name a Reel or carousel and a **visual or narrative choice**.
 
-> Your pour-over Reel last Tuesday — the overhead grind shot and the quiet caption — is close to how we show the kettle.
+> Your teardown Reel last Tuesday — the slow pan across the board and the quiet caption — is close to how we show the product.
 
 **State in the proposal:**
 
@@ -42,7 +42,7 @@ Change the opener and the proposal by platform. Do not reuse “your amazing con
 
 **Opener:** name a hook or format, not “you’re great on camera.”
 
-> The 3-second kettle-whistle hook on your last brewing video is the format we want to stay in — not a polished brand spot.
+> The 3-second unlock-hook on your last gadget video is the format we want to stay in — not a polished brand spot.
 
 **State in the proposal:**
 
@@ -68,7 +68,7 @@ Multi-platform packages: one sentence of scope (`YouTube integration + 2 TikToks
 |------|-----------|
 | Video / post title | First sentence |
 | Style (review / vlog / comedy) | Why the proposal fits |
-| Audience (home baristas, new parents…) | The 1–2 brand sentences |
+| Audience (home baristas, indie founders…) | The 1–2 brand sentences |
 | Has a manager | Address the creator; optional `Happy to include your manager` |
 | Region / language | Follow Language in `SKILL.md`. JP / KR / LATAM / SEA: English + target-language drafts when the user did not specify |
 
