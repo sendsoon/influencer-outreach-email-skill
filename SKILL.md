@@ -15,7 +15,7 @@ Install paths for humans: `README.md`.
 
 | Stage | Signals | Load |
 |------|---------|------|
-| Cold outreach | first contact, pitch, intro | `assets/email-template.md` + `references/platform-notes.md` |
+| Cold outreach | first contact, pitch, intro | `references/clarification.md` + `assets/email-template.md` + `references/platform-notes.md` |
 | Follow-up | no reply, nudge, second email | `references/follow-up-sequence.md` (#2) |
 | Closing | last note after #2, close the loop | `references/follow-up-sequence.md` (#3) |
 | Terms | rates, deliverables, dates, usage | terms template in `assets/email-template.md` |
@@ -28,18 +28,18 @@ Iterate subject lines with `references/subject-lines.md`. Affiliate, ongoing, an
 
 1. **Stage**: cold / follow-up (#2) / closing (#3) / terms / shipment / reply.
 2. **Language + tier**: infer from bio, video language, location, follower count. See Language and Creator Tier. Unknown is fine — do not block.
-3. **Gaps**: read `references/clarification.md`. A product or collaboration brief is enough. Missing fields become natural-language stand-ins (e.g. “the creator” / 创作者) — never `{{placeholders}}` in the pasted body. Do not ask before the first draft unless that brief is missing.
+3. **Gaps**: read `references/clarification.md`. Pull creator fields from a local or shared list (CSV / Excel / TXT / table / Google Sheet) when one exists. If none, ask **once** whether to add a data source and **wait** — do not also output the email in that turn. After they add a source, or decline, leftover gaps become stand-ins — never `{{placeholders}}` in the pasted body. Do not quiz field-by-field.
 4. **Load**: platform notes for first touch; follow-up sequence for nudges.
-5. **Draft**: Subject, then body. Default **one** primary email (Language bilingual branch excepted). For a list, **one email per creator** — never a shared blast body.
+5. **Draft**: Subject, then body. Default **one** primary email (Language bilingual branch excepted). For a list, **one email per creator / per row** — never a shared blast body.
 6. **Check**: Guardrails + Quality bar, then Output format.
 
-If a product or collaboration intro is present, draft immediately. Extract name and platform from profile/video URLs when given; do not re-ask known facts.
+If a product or collaboration intro is present **and** the list pass is done (source read, or user declined / skipped), draft. Extract name and platform from profile/video URLs or list columns when given; do not re-ask known facts.
 
-Map fields with glossary names in `assets/email-template.md`, then **render stand-ins** from `references/clarification.md` wherever a value is unknown.
+Map fields with glossary names in `assets/email-template.md`, then **render stand-ins** from `references/clarification.md` wherever a value is still unknown.
 
 ## Input
 
-See `references/clarification.md`. Required: product / collaboration context. Everything else is optional and becomes a stand-in if missing.
+See `references/clarification.md`. Required: product / collaboration context. Creator fields: from the user’s list or table when available; otherwise one offer to add a data source, then stand-ins.
 
 Do not invent fees, video titles, follower counts, deadlines, or legal terms.
 
@@ -214,13 +214,13 @@ Optional: one alternate subject on a single line.
 - [ ] No invented fees, metrics, legal terms, or unwatched content
 - [ ] Follow-up shorter than the first email
 - [ ] Professional, not salesy
-- [ ] List outreach: a distinct hook per creator
+- [ ] List outreach: a distinct hook per creator **when the list or user supplied one**; otherwise the shared stand-in “your recent work” is fine
 
 ## Additional Resources
 
 - Subject lines: `references/subject-lines.md`
 - Follow-up cadence: `references/follow-up-sequence.md`
-- Clarification (required vs optional): `references/clarification.md`
+- Clarification (lists + stand-ins): `references/clarification.md`
 - YouTube / Instagram / TikTok: `references/platform-notes.md`
 - Templates: `assets/email-template.md`
 - Install: `README.md`

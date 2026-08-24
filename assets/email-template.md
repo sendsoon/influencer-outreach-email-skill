@@ -2,7 +2,7 @@
 
 Replace known `{{placeholders}}` with real facts. Unknown fields: natural-language stand-ins from `references/clarification.md` (e.g. “the creator” / 创作者) — never leave `{{creator_name}}` in the pasted body. The skeletons below are a **field map**; the email you return must already be rendered. Do not invent facts. Language follows `SKILL.md` (English, target language, or both).
 
-A product or collaboration brief is enough to fill the brand and proposal lines. Draft anyway when creator, hook, fee, or sender is missing.
+A product or collaboration brief fills the brand and proposal lines. Creator name, handle, platform, and email come from the user’s list when one exists (`references/clarification.md`). After that pass, leftover gaps are stand-ins — draft anyway.
 
 Always include a `Subject:` line. Format: `SKILL.md` → Output Format.
 

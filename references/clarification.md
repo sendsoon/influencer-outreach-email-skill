@@ -1,42 +1,64 @@
 # Clarification
 
-Only **product / collaboration context** is required. Everything else is optional.
+Only **product / collaboration context** is required from the user. Creator fields should come from a **list or table** whenever one exists — not from a questionnaire.
 
-If that context exists, **draft now**. Do not quiz first. Extra facts enrich the email. Missing ones become **natural-language stand-ins** (代称) in the body — never leave `{{placeholders}}` in the copy the user will paste. Never invent fees, video titles, follower counts, deadlines, cookie windows, or legal terms.
+Never invent emails, names, fees, video titles, follower counts, deadlines, cookie windows, or legal terms. Missing fields after the list is read become **stand-ins** (代称). Never leave `{{placeholders}}` in the pasted body. List every stand-in under Assumptions.
 
-List every stand-in under Assumptions so the user can swap in real names later.
+## Required (from the user)
 
-## Required (draft without this)
+A short description of **what the product is**, **what the collaboration is**, or both.
 
-A short description of **what the product is**, **what the collaboration is**, or both — enough to write a brand blurb and a proposal sentence.
+If even that is missing, ask **one** question: what is the product or the collaboration?
 
-Examples that are enough on their own:
+If **both** the product/collab brief **and** a creator list are missing, ask both in **one** turn, then wait. Do not add a third question.
 
-- `SendSoon — overseas EDM, cheaper than SendGrid / Klaviyo, paid + affiliate`
-- `We want creators to try our gooseneck kettle; product seeding, no posting requirement`
+## Data sources (creator + contact fields)
 
-If even that is missing (e.g. “write an outreach email” with no product), ask **one** question: what is the product or the collaboration? Then draft.
+Users typically keep a CSV, Excel, TXT, database table, or a shared sheet (e.g. Google Sheets / Drive). Treat that as the source of truth for names, emails, handles, platforms, and other columns.
 
-## Optional (enrich if present; skip if not)
+### Where to look (in order)
 
-Do **not** ask for these before the first draft. Extract from URLs or the user’s text when given. Do not re-ask known facts.
+1. Files or links the user attached, pasted, or named in this turn.
+2. An obvious list already in the workspace (`.csv`, `.xlsx`, `.xls`, `.tsv`, `.txt`, SQL dump, or a table they pointed at).
+3. A Google Sheets / Drive / shared-form URL they provided.
 
-- Creator name, handle, platform, content style, follower count / tier
-- A watched video or post (opener hook)
-- Collab type details: paid / seeding / affiliate / paid + affiliate / ongoing
-- Recipient: creator vs manager / MCN
-- Fee, commission, cookie window
-- CTA (default: a short reply)
-- Sender name, title, company, email, calendar link
-- Language (see `SKILL.md`; unknown → English)
-- Terms-stage only: deliverables, publish window, usage rights
+Do not scrape private drives or guess unpublished URLs. If a sheet URL is behind login, ask them to export CSV or paste the tab — do not bypass access.
 
-## Stand-ins (when a field is missing)
+If **no data source is in play**, ask **once**:
+
+> Do you have a creator list to use (CSV, Excel, TXT, database table, or a Google Sheet / shared form)? If yes, drop the file or link here and I will pull the fields from it.
+
+Then wait. Do not draft in the same turn as this question unless they already said they have no list. If they say no or skip: draft from the product/collab brief + stand-ins. Do **not** ask for individual fields (name, fee, video, sender) instead of a list.
+
+### After they add a source
+
+Read it and map columns (headers vary; match by meaning, case-insensitive):
+
+| Need | Typical column names |
+|------|----------------------|
+| Creator name | name, creator, influencer, KOL, 达人, 姓名 |
+| Handle | handle, channel, username, @, YouTube, Instagram, TikTok |
+| Platform | platform, channel type, 平台 |
+| Email | email, mail, 邮箱, business email |
+| Followers / tier | followers, subs, 粉丝 |
+| Manager | manager, agency, MCN, 经纪人 |
+| Notes / hook | notes, content, video, 备注, 作品 |
+| Language / region | language, country, market, 地区 |
+
+One **row** = one creator = **one email**. Never a shared blast body.
+
+Pull every mapped field into the draft. If the row includes an email, also list `To: {email}` under Assumptions (this skill still does not send). If a column is empty or absent **after** this pass: use stand-ins. **Do not ask again** for those gaps.
+
+## Optional extras (chat, not the list)
+
+Still enrich from the message when present (collab type, fee, sender, CTA, language). Do not quiz for them. After the list is read, leftover gaps → stand-ins only.
+
+## Stand-ins (when a field is still missing)
 
 Use the matching language of the draft. Do not mix `{{creator_name}}` into a finished email.
 
-| Missing field | English | 简体中文 (and other target-language drafts: equivalent noun) |
-|---------------|---------|--------------------------------------------------------------|
+| Missing field | English | 简体中文 (other languages: the same kind of noun) |
+|---------------|---------|---------------------------------------------------|
 | Creator name | Greeting `Hi there,`; refer to **the creator** | 称呼 `您好，`；正文称 **创作者** |
 | Handle / channel | **your channel** | **您的频道** |
 | Platform | **your audience** | **您的观众** |
@@ -52,12 +74,10 @@ Use the matching language of the draft. Do not mix `{{creator_name}}` into a fin
 | Manager name | `Hi there,`; **the manager** | `您好，`；**经纪人** |
 | Timeline / publish window | **a window that works for you** | **合适的档期** |
 | Tracking number | omit or “the tracking number” | **物流单号** |
-| Follow-up new fact (`{{new_info}}`) | Skip the “One update:” sentence | 不写「有一条新进展」 |
+| Follow-up new fact | Skip the “One update:” sentence | 不写「有一条新进展」 |
 
-Unknown collab type: “a collaboration” / 「一次合作」— do not force paid vs seeding vs affiliate.
+Unknown collab type: “a collaboration” / 「一次合作」. Unknown creator: never `Dear Influencer`.
 
-Unknown creator: never `Dear Influencer`.
+## When they add or update the list later
 
-## After they add facts
-
-If the user later supplies a name, hook, fee, or sender, replace the stand-ins and re-issue Subject + body. If they skip something, keep the stand-in — do not stall.
+If the user uploads a new file, pastes more rows, or fills empty cells, **re-read the source**, replace matching stand-ins, and re-issue Subject + body for the affected creator(s). Do not stall while waiting for a perfect table.

@@ -6,7 +6,7 @@ Change the opener and the proposal by platform. Do not reuse “your amazing con
 
 **They care about:** completion on a given video, audience trust, whether a brand breaks review neutrality. Managers / MCNs are common above ~100k subscribers.
 
-**Opener:** name a **specific video title** plus a checkable detail (method, chapter, conclusion) — not just the niche.
+**Opener:** when a real video is in the list notes or the user watched it, name that **title** plus a checkable detail — not just the niche. If none, use **your recent work** / 您最近的内容; do not invent a title.
 
 > Watched your Pixel 11 hands-on — catching that the “29% faster wireless charging” only applies to the smaller Pro, while the XL is 17% in the small print.
 
@@ -23,7 +23,7 @@ Change the opener and the proposal by platform. Do not reuse “your amazing con
 
 **They care about:** visual fit, whether a Reel can carry the product, Stories clicks, **usage rights** (organic vs paid / whitelisting).
 
-**Opener:** name a Reel or carousel and a **visual or narrative choice**.
+**Opener:** when a real Reel or carousel is known, name it and a **visual or narrative choice**. If none, use **your recent work** / 您最近的内容; do not invent a post.
 
 > Your teardown Reel last Tuesday — the slow pan across the board and the quiet caption — is close to how we show the product.
 
@@ -40,7 +40,7 @@ Change the opener and the proposal by platform. Do not reuse “your amazing con
 
 **They care about:** native feel, trend timing, Spark Ads rights, how tight the script is. Decisions are faster than YouTube — keep the first email **70–110 words**.
 
-**Opener:** name a hook or format, not “you’re great on camera.”
+**Opener:** when a real hook or format is known, name it — not “you’re great on camera.” If none, use **your recent work** / 您最近的内容; do not invent a video.
 
 > The 3-second unlock-hook on your last gadget video is the format we want to stay in — not a polished brand spot.
 
