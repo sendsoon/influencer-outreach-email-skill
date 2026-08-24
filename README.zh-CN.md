@@ -30,7 +30,8 @@ influencer-outreach-email-skill/
 ├── references/
 │   ├── subject-lines.md
 │   ├── follow-up-sequence.md
-│   └── platform-notes.md
+│   ├── platform-notes.md
+│   └── clarification.md          # 信息不全时如何追问
 └── assets/
     └── email-template.md         # 占位符与完整示例
 ```
@@ -49,129 +50,54 @@ npx skills add sendsoon/influencer-outreach-email-skill
 npx skills add sendsoon/influencer-outreach-email-skill -g -a claude-code -a codex -y
 ```
 
-手动安装时，将 `SKILL.md`、`README.md`（需要本地化文档时一并复制 `README.zh-CN.md` / `README.ja.md`）、`references/`、`assets/` 拷入客户端会扫描的 skills 目录。`SKILL.md` 必须位于 Skill 文件夹根目录。安装后请新开 Agent 会话（Codex 需重启）。
-
-以下手动命令在本仓库根目录执行。Windows 用 PowerShell，macOS / Linux 用 bash。
-
-### 路径
-
-| 客户端 | 用户级 | 项目级 |
-|--------|--------|--------|
-| Codex | `~/.codex/skills/<name>/` 与 `~/.agents/skills/<name>/` | `.agents/skills/<name>/` |
-| Claude Code | `~/.claude/skills/<name>/` | `.claude/skills/<name>/` |
-| 其他 Agent Skills 客户端 | 该产品文档中的用户级 skills 目录 | 该产品文档中的项目级 skills 目录 |
-
-`<name>` = `influencer-outreach-email-skill`。
-
-### Codex
-
-```powershell
-function Install-SkillTo($dest) {
-  New-Item -ItemType Directory -Force $dest | Out-Null
-  Copy-Item -Force SKILL.md, README.md, README.zh-CN.md, README.ja.md $dest
-  Copy-Item -Recurse -Force references, assets $dest
-}
-Install-SkillTo "$env:USERPROFILE\.codex\skills\influencer-outreach-email-skill"
-Install-SkillTo "$env:USERPROFILE\.agents\skills\influencer-outreach-email-skill"
-```
+更新到 GitHub 上的最新版本：
 
 ```bash
-install_skill() { mkdir -p "$1"; cp SKILL.md README.md README.zh-CN.md README.ja.md "$1/"; cp -R references assets "$1/"; }
-install_skill ~/.codex/skills/influencer-outreach-email-skill
-install_skill ~/.agents/skills/influencer-outreach-email-skill
+npx skills update influencer-outreach-email-skill
 ```
 
-项目级安装路径：`.agents/skills/influencer-outreach-email-skill/`。
-
-若仓库已在 GitHub，也可用 `$skill-installer`；完成后重启 Codex。Skill 未出现时，检查 `~/.codex/config.toml` 是否启用 skills（部分版本需 `[features] skills = true`）。
-
-### Claude
-
-**Claude Code** — 复制到 `~/.claude/skills/influencer-outreach-email-skill/`（用户级）或 `.claude/skills/influencer-outreach-email-skill/`（仓库级）。
-
-```powershell
-$dest = "$env:USERPROFILE\.claude\skills\influencer-outreach-email-skill"
-New-Item -ItemType Directory -Force $dest | Out-Null
-Copy-Item -Force SKILL.md, README.md, README.zh-CN.md, README.ja.md $dest
-Copy-Item -Recurse -Force references, assets $dest
-```
+用户级：
 
 ```bash
-mkdir -p ~/.claude/skills/influencer-outreach-email-skill
-cp SKILL.md README.md README.zh-CN.md README.ja.md ~/.claude/skills/influencer-outreach-email-skill/
-cp -R references assets ~/.claude/skills/influencer-outreach-email-skill/
+npx skills update influencer-outreach-email-skill -g -y
 ```
 
-斜杠命令：`/influencer-outreach-email-skill`。若未出现，执行 `/reload-plugins` 或重开会话。
+## 示例
 
-**Claude.ai** — 需 Pro / Max / Team / Enterprise，并已开启 Skills（以产品设置为准）。
-
-1. 将本文件夹打成 zip，解压后应看到 `SKILL.md` 或 `influencer-outreach-email-skill/SKILL.md`。
-2. [claude.ai](https://claude.ai) → **Settings** → **Capabilities**（有的界面为 **Features**）→ **Skills**。
-3. 上传 zip。自定义 Skill 仅对当前账号生效，不会同步到 Claude Code。
-
-### 其他 Agent
-
-按该产品文档中的 skills 目录拷贝本文件夹（遵循 Agent Skills 规范），或：
-
-```bash
-npx skills add sendsoon/influencer-outreach-email-skill
-```
-
-用户级安装加 `-g`。`--agent` 取值以 `npx skills --help` 为准。
-
-## 输入
-
-- 品牌 / 产品及 1–2 句卖点
-- 创作者姓名、平台、内容风格（最好有一条实际看过的内容）
-- 粉丝量或预估层级（Nano / Micro / Mid / Macro）
-- 合作形式：付费 / 寄样 / 联盟 / 长期
-- 写给创作者本人还是经理 / MCN
-- 费用区间（如有）
-- CTA：回复、通话或链接
-
-信息不全时，Agent 最多追问 1–3 个问题，并用 `{{brand_name}}`、`{{creator_name}}`、`{{collab_type}}` 等占位符出稿。
-
-## 输出
+**输入**
 
 ```
-Subject: ...
+品牌：Northstar — 恒温手冲壶，冲煮温度可稳定在 ±1°C
+达人：Maya Chen，YouTube「Weekend Brews」，约 8.5 万粉，咖啡器具评测
+看过：水温对比视频，92°C vs 96°C 并排测试
+合作：付费植入一条
+收件人：Maya 本人
+酬劳：USD 3,500–4,500
+CTA：短回复即可
+```
+
+**输出**
+
+```
+Subject: Maya — idea for a Northstar collab
 
 ---
 
-<邮件正文>
+Hi Maya,
+
+I watched your water-temperature comparison — the 92°C vs 96°C side-by-side is exactly the kind of test we built the Northstar kettle around.
+
+Northstar makes a temperature-stable gooseneck kettle — it holds within 1°C so brew recipes are repeatable at home. I'm reaching out about a paid collaboration with Weekend Brews: one dedicated integration in a brew-gear video. You'd keep your usual test format; we'd provide talking points, not a script. We had USD 3,500–4,500 in mind, and I'm open to a number that fits your rate card.
+
+If this is relevant, a short reply is enough. I can send a one-page brief with talking points (not a rigid script).
+
+Best,
+Jordan Hale
+Partnerships, Northstar
+jordan@northstar.example
 
 ---
 
 Assumptions / placeholders:
-- ...
+- None
 ```
-
-私信第一行为 `DM:`。语气：对等、专业；正式程度跟随达人量级。避免垃圾邮件用语（`FREE`、`$$$`、`ACT NOW`）。冷启动 80–150 词；跟进更短。日韩 / 拉美 / 东南亚达人：用户未指定语言时同时出英语版 + 目标语言版。
-
-## 跟进节奏
-
-| 触达 | 时间 | 写法 |
-|------|------|------|
-| #1 | Day 0 | 完整邮件 |
-| #2 | 3–5 天 | 更短，补一条新信息 |
-| #3 | 再过 4–6 天 | 3–6 句，不施压 |
-| #4 breakup | 再过 5–7 天 | 收尾后停止 |
-
-同一线索最多四封。细则见 `references/follow-up-sequence.md`。
-
-## 示例请求
-
-- Help me partner with this YouTuber
-- Draft a seeding email for this Instagram creator
-- Follow up with last week’s KOL
-- Confirm terms and send them over
-- They replied with a rate — draft the response
-- Make this an Instagram DM
-
-## 不在范围内
-
-- 代发邮件、爬取或验证创作者邮箱
-- 群发同一正文（每位创作者须有独立钩子）
-- 编造视频、费用或法律条款
-- 对可能未满 18 岁的创作者做商务建联（先确认年龄/监护；付费合作应咨询法务）

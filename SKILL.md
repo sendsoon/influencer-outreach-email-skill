@@ -28,7 +28,7 @@ Iterate subject lines with `references/subject-lines.md`. Affiliate, ongoing, an
 
 1. **Stage**: cold / follow-up (#2, #3, breakup) / terms / shipment / reply.
 2. **Language + tier**: infer from bio, video language, location, follower count. See Language and Creator Tier. Unknown is fine — do not block.
-3. **Gaps**: ask at most **1–3** blocking questions. Fill the rest with `{{placeholders}}` and list Assumptions under the draft.
+3. **Gaps**: read `references/clarification.md`. Ask at most **1–3** blocking questions; otherwise draft with placeholders.
 4. **Load**: platform notes for first touch; follow-up sequence for nudges.
 5. **Draft**: Subject, then body. Default **one** primary email (Language bilingual branch excepted). For a list, **one email per creator** — never a shared blast body.
 6. **Check**: Guardrails + Quality bar, then Output format.
@@ -39,25 +39,9 @@ Use only glossary names from `assets/email-template.md` (`{{content_hook}}`, `{{
 
 ## Required Information
 
+See `references/clarification.md` for when to ask vs draft, the 1–3 question cap, and the field map.
+
 Do not invent fees, video titles, follower counts, deadlines, or legal terms.
-
-**Required (ask or placeholder):**
-
-- Brand / product and 1–2 sentence value proposition
-- Creator name, platform (YouTube / Instagram / TikTok), content style
-- Follower count or estimated tier (Nano / Micro / Mid / Macro)
-- Collab type: paid / product seeding / affiliate / ongoing
-- Recipient: creator vs manager / MCN
-- CTA: reply, book a call, or open a link
-
-**Optional:**
-
-- Fee range
-- One piece of content actually watched (for the opener)
-- Sender name, title, company, email, calendar link
-- Deliverable count, publish window, exclusivity, usage rights (terms stage only)
-
-Ask at most one of: paid vs seeding vs affiliate; preferred CTA; a real content hook. Unknown tier: draft anyway; note “tier unconfirmed” in Assumptions.
 
 ## Email Structure
 
@@ -202,6 +186,7 @@ Optional: one alternate subject on a single line.
 
 - Subject lines: `references/subject-lines.md`
 - Follow-up cadence: `references/follow-up-sequence.md`
+- Clarification (what to ask): `references/clarification.md`
 - YouTube / Instagram / TikTok: `references/platform-notes.md`
 - Templates: `assets/email-template.md`
 - Install: `README.md`
