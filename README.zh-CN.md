@@ -1,0 +1,197 @@
+# influencer-outreach-email-skill
+
+[English](README.md) | **简体中文** | [日本語](README.ja.md)
+
+为海外创作者（YouTube、Instagram、TikTok 等）起草正式英文商务合作邮件。
+
+Agent 应在出现合作意向时触发——influencer outreach、brand collaboration、「联系这个 YouTuber」——并返回可直接复制的 **Subject + 正文**，而不是策略备忘。
+
+仓库根目录**就是**该 Skill。文件夹名须保持 `influencer-outreach-email-skill`，以便与 `SKILL.md` 中的 `name` 一致。
+
+## 覆盖范围
+
+| 阶段 | 内容 |
+|------|------|
+| 冷启动 | 付费、寄样、联盟、长期合作的第一步、经理/机构 |
+| 跟进 | 未回复时的 #2 / #3 / breakup |
+| 条款 | 交付物、档期、费用、使用权 |
+| 寄送 | 样品物流跟踪 |
+| 对方已回复 | 要 brief、报价、转经理、拒绝 |
+| 私信 | 应用内短文案（非邮件格式） |
+
+## 目录
+
+```
+influencer-outreach-email-skill/
+├── SKILL.md                      # Agent 指令
+├── README.md                     # 安装与用法（英文）
+├── README.zh-CN.md               # 中文
+├── README.ja.md                  # 日文
+├── references/
+│   ├── subject-lines.md
+│   ├── follow-up-sequence.md
+│   └── platform-notes.md
+└── assets/
+    └── email-template.md         # 占位符与完整示例
+```
+
+## 安装
+
+将 `SKILL.md`、`README.md`（需要本地化文档时一并复制 `README.zh-CN.md` / `README.ja.md`）、`references/`、`assets/` 拷入客户端会扫描的 skills 目录。`SKILL.md` 必须位于 Skill 文件夹根目录。安装后请新开 Agent 会话（Codex 需重启）。
+
+以下命令在本仓库根目录执行。Windows 用 PowerShell，macOS / Linux 用 bash。
+
+### 路径
+
+| 客户端 | 用户级 | 项目级 |
+|--------|--------|--------|
+| Codex | `~/.codex/skills/<name>/` 与 `~/.agents/skills/<name>/` | `.agents/skills/<name>/` |
+| Claude Code | `~/.claude/skills/<name>/` | `.claude/skills/<name>/` |
+| 其他 Agent Skills 客户端 | 该产品文档中的用户级 skills 目录 | 该产品文档中的项目级 skills 目录 |
+
+`<name>` = `influencer-outreach-email-skill`。
+
+### Codex
+
+```powershell
+function Install-SkillTo($dest) {
+  New-Item -ItemType Directory -Force $dest | Out-Null
+  Copy-Item -Force SKILL.md, README.md, README.zh-CN.md, README.ja.md $dest
+  Copy-Item -Recurse -Force references, assets $dest
+}
+Install-SkillTo "$env:USERPROFILE\.codex\skills\influencer-outreach-email-skill"
+Install-SkillTo "$env:USERPROFILE\.agents\skills\influencer-outreach-email-skill"
+```
+
+```bash
+install_skill() { mkdir -p "$1"; cp SKILL.md README.md README.zh-CN.md README.ja.md "$1/"; cp -R references assets "$1/"; }
+install_skill ~/.codex/skills/influencer-outreach-email-skill
+install_skill ~/.agents/skills/influencer-outreach-email-skill
+```
+
+项目级安装路径：`.agents/skills/influencer-outreach-email-skill/`。
+
+若仓库已在 GitHub，也可用 `$skill-installer`；完成后重启 Codex。Skill 未出现时，检查 `~/.codex/config.toml` 是否启用 skills（部分版本需 `[features] skills = true`）。
+
+### Claude
+
+**Claude Code** — 复制到 `~/.claude/skills/influencer-outreach-email-skill/`（用户级）或 `.claude/skills/influencer-outreach-email-skill/`（仓库级）。
+
+```powershell
+$dest = "$env:USERPROFILE\.claude\skills\influencer-outreach-email-skill"
+New-Item -ItemType Directory -Force $dest | Out-Null
+Copy-Item -Force SKILL.md, README.md, README.zh-CN.md, README.ja.md $dest
+Copy-Item -Recurse -Force references, assets $dest
+```
+
+```bash
+mkdir -p ~/.claude/skills/influencer-outreach-email-skill
+cp SKILL.md README.md README.zh-CN.md README.ja.md ~/.claude/skills/influencer-outreach-email-skill/
+cp -R references assets ~/.claude/skills/influencer-outreach-email-skill/
+```
+
+斜杠命令：`/influencer-outreach-email-skill`。若未出现，执行 `/reload-plugins` 或重开会话。
+
+**Claude.ai** — 需 Pro / Max / Team / Enterprise，并已开启 Skills（以产品设置为准）。
+
+1. 将本文件夹打成 zip，解压后应看到 `SKILL.md` 或 `influencer-outreach-email-skill/SKILL.md`。
+2. [claude.ai](https://claude.ai) → **Settings** → **Capabilities**（有的界面为 **Features**）→ **Skills**。
+3. 上传 zip。自定义 Skill 仅对当前账号生效，不会同步到 Claude Code。
+
+### 其他 Agent
+
+按该产品文档中的 skills 目录拷贝本文件夹（遵循 Agent Skills 规范）。若本仓库已在 GitHub：
+
+```bash
+npx skills add <owner/repo> --agent claude
+npx skills add <owner/repo>
+```
+
+用户级安装加 `-g`。`--agent` 取值以 `npx skills --help` 为准。
+
+### 本地开发（一份代码，多个客户端）
+
+```powershell
+$src = (Resolve-Path .).Path
+$dests = @(
+  "$env:USERPROFILE\.codex\skills\influencer-outreach-email-skill",
+  "$env:USERPROFILE\.agents\skills\influencer-outreach-email-skill",
+  "$env:USERPROFILE\.claude\skills\influencer-outreach-email-skill"
+)
+foreach ($d in $dests) {
+  New-Item -ItemType Directory -Force (Split-Path $d) | Out-Null
+  if (Test-Path $d) { Remove-Item -Recurse -Force $d }
+  cmd /c mklink /J "$d" "$src"
+}
+```
+
+macOS / Linux 使用 `ln -s`。
+
+### 团队仓库
+
+| 使用方 | 路径 |
+|--------|------|
+| Codex | `.agents/skills/influencer-outreach-email-skill/` |
+| Claude Code | `.claude/skills/influencer-outreach-email-skill/` |
+| Codex + Claude Code | 上述两个路径都放（复制或链接） |
+
+### 安装校验
+
+- 文件夹名为 `influencer-outreach-email-skill`，内含 `SKILL.md`、`references/`、`assets/`。
+- 新对话输入 “Help me partner with this YouTuber”，应返回 Subject + 英文正文。
+- Codex 的 skills 列表与 Claude Code 的 `/` 菜单中能搜到该名称。
+
+## 输入
+
+- 品牌 / 产品及 1–2 句卖点
+- 创作者姓名、平台、内容风格（最好有一条实际看过的内容）
+- 合作形式：付费 / 寄样 / 联盟 / 长期
+- 写给创作者本人还是经理 / MCN
+- 费用区间（如有）
+- CTA：回复、通话或链接
+
+信息不全时，Agent 最多追问 1–3 个问题，并用 `{{brand_name}}`、`{{creator_name}}`、`{{collab_type}}` 等占位符出稿。
+
+## 输出
+
+```
+Subject: ...
+
+---
+
+<English email body>
+
+---
+
+Assumptions / placeholders:
+- ...
+```
+
+私信第一行为 `DM:`。语气：对等、专业的商务英文。避免垃圾邮件用语（`FREE`、`$$$`、`ACT NOW`）。冷启动 80–150 词；跟进更短。
+
+## 跟进节奏
+
+| 触达 | 时间 | 写法 |
+|------|------|------|
+| #1 | Day 0 | 完整邮件 |
+| #2 | 3–5 天 | 更短，补一条新信息 |
+| #3 | 再过 4–6 天 | 3–6 句，不施压 |
+| #4 breakup | 再过 5–7 天 | 收尾后停止 |
+
+同一线索最多四封。细则见 `references/follow-up-sequence.md`。
+
+## 示例请求
+
+- Help me partner with this YouTuber
+- Draft a seeding email for this Instagram creator
+- Follow up with last week’s KOL
+- Confirm terms and send them over
+- They replied with a rate — draft the response
+- Make this an Instagram DM
+
+## 不在范围内
+
+- 代发邮件、爬取或验证创作者邮箱
+- 群发同一正文（每位创作者须有独立钩子）
+- 编造视频、费用或法律条款
+- 对可能未满 18 岁的创作者做商务建联
