@@ -34,7 +34,7 @@ Change the opener and the proposal by platform. Do not reuse “your amazing con
 - Usage: organic only unless the user asked for Spark / whitelist / paid amplification
 - Aesthetic constraints: one sentence max — not a full creative brief
 
-**Avoid:** follower count as the pitch, a persistent on-screen logo, exclusivity before a fee is on the table.
+**Avoid:** follower count as the pitch, a persistent on-screen logo, exclusivity before a fee is on the table (especially Nano / Micro — see Creator Tier in `SKILL.md`).
 
 ## TikTok
 
@@ -62,6 +62,8 @@ If the platform is unspecified:
 
 Multi-platform packages: one sentence of scope (`YouTube integration + 2 TikToks`). Leave SOW detail for the reply.
 
+Nano / Micro with no business email: prefer in-app DM (see Channel in `SKILL.md`).
+
 ## Personalization Cheat Sheet
 
 | Input | Use it in |
@@ -70,7 +72,7 @@ Multi-platform packages: one sentence of scope (`YouTube integration + 2 TikToks
 | Style (review / vlog / comedy) | Why the proposal fits |
 | Audience (home baristas, new parents…) | The 1–2 brand sentences |
 | Has a manager | Address the creator; optional `Happy to include your manager` |
-| Region / language | Send-time only; body stays English unless asked |
+| Region / language | Follow Language in `SKILL.md`. JP / KR / LATAM / SEA: English + target-language drafts when the user did not specify |
 
 No real content watched: keep `{{content_hook}}`, note in Assumptions that the opener needs a real example, and do not invent a title.
 

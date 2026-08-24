@@ -107,9 +107,10 @@ Partnerships, Northstar
 
 | Signal | Next email |
 |--------|------------|
+| Interested, no user budget | Request media kit / rate card / recent collabs first; do not jump to Terms |
 | Forward to manager / agent | Thank them; ask for the manager’s address. Stop using only the personal inbox |
 | Wants the product first | Seeding / shipment template; do not chase a fee in the same note |
-| Rate too high / too low | Terms template; only user-authorized numbers |
+| Rate too high / too low | Do not invent a counter. If no authorized budget, request media kit first; otherwise Terms with user numbers only |
 | Busy now | One window (e.g. 4–6 weeks), one confirmation, then stop |
 
 ## Sequence Hygiene

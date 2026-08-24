@@ -4,6 +4,8 @@ Subject lines decide open rate. Creator inboxes are full of PR blasts. Write a s
 
 ## Rules
 
+- **Personalization over formulas.** Prefer a subject that cites a specific video, hook, or visual. Creators see `idea for a {{brand_name}} collab` all day — that shape is a fallback, not the goal.
+- Write an original line when a real content detail exists. The templates below are backups for when a specific hook is missing.
 - Prefer **40–60 characters**; >70 truncates on mobile.
 - Include at least two of: creator, brand, content theme, collab type.
 - Noun + purpose. Few adjectives.
@@ -18,7 +20,9 @@ Keep these out of the subject and preview text:
 
 Also avoid: ALL CAPS, stacked exclamation marks, emoji piles, `Opportunity!!!`, `Exciting collab`, `Let's work together!`.
 
-## Templates by Stage
+## Templates by Stage (fallbacks)
+
+Use these when you cannot write a content-specific original. Do not default to #1 if a real hook exists.
 
 ### Cold outreach
 

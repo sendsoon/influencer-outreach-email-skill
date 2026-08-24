@@ -2,7 +2,7 @@
 
 **English** | [简体中文](README.zh-CN.md) | [日本語](README.ja.md)
 
-Drafts formal English partnership emails to overseas creators (YouTube, Instagram, TikTok, and similar).
+Drafts partnership emails to overseas creators (YouTube, Instagram, TikTok, and similar). Language follows the creator’s market — English, their language, or both — not English-only by default.
 
 The agent should fire on collaboration intent — influencer outreach, brand collaboration, “contact this YouTuber” — and return a copy-paste **Subject + body**, not a strategy memo.
 
@@ -16,8 +16,8 @@ The repo root **is** the skill. Keep the folder name `influencer-outreach-email-
 | Follow-up | #2 / #3 / breakup when there is no reply |
 | Terms | Deliverables, window, fee, usage |
 | Shipment | Sample tracking |
-| Reply handling | Brief request, rate, manager handoff, decline |
-| DM | Short in-app copy instead of email |
+| Reply handling | Media kit request, brief, rate, manager handoff, decline |
+| DM | Short in-app copy; preferred for Nano/Micro when no email is on file |
 
 ## Layout
 
@@ -138,13 +138,14 @@ macOS / Linux: `ln -s`.
 ### Verify
 
 - Folder name is `influencer-outreach-email-skill` and contains `SKILL.md`, `references/`, `assets/`.
-- New chat: “Help me partner with this YouTuber” should return Subject + English body.
+- New chat: “Help me partner with this YouTuber” should return Subject + body (language follows the creator’s market).
 - The name appears in Codex skills and the Claude Code `/` menu.
 
 ## Inputs
 
 - Brand / product and 1–2 sentence value proposition
 - Creator name, platform, content style (ideally one piece of content you watched)
+- Follower count or estimated tier (Nano / Micro / Mid / Macro)
 - Collab type: paid / seeding / affiliate / ongoing
 - Creator vs manager / MCN
 - Fee range, if any
@@ -159,7 +160,7 @@ Subject: ...
 
 ---
 
-<English email body>
+<email body>
 
 ---
 
@@ -167,7 +168,7 @@ Assumptions / placeholders:
 - ...
 ```
 
-DMs use `DM:` on the first line. Tone: professional, peer-level English. No spam phrasing (`FREE`, `$$$`, `ACT NOW`). Cold emails: 80–150 words; follow-ups shorter.
+DMs use `DM:` on the first line. Tone: professional, peer-level; formality follows creator tier. No spam phrasing (`FREE`, `$$$`, `ACT NOW`). Cold emails: 80–150 words; follow-ups shorter. JP / KR / LATAM / SEA creators: English + target-language drafts when the user did not specify a language.
 
 ## Follow-up cadence
 
@@ -194,4 +195,4 @@ Max four emails. Details: `references/follow-up-sequence.md`.
 - Sending mail, scraping, or validating creator emails
 - Identical blast copy (one distinct hook per creator)
 - Invented videos, fees, or legal terms
-- Commercial outreach to creators who may be under 18
+- Commercial outreach to creators who may be under 18 (confirm age/guardianship first; paid work should go through legal)

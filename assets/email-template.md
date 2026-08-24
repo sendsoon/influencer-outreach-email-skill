@@ -1,6 +1,6 @@
 # Email Templates
 
-All bodies are English. Replace `{{placeholders}}`; leave them in place when unknown. Do not invent facts.
+Replace `{{placeholders}}`; leave them in place when unknown. Do not invent facts. Language follows `SKILL.md` (English, target language, or both).
 
 Always include a `Subject:` line. Format: `SKILL.md` → Output Format.
 
@@ -324,6 +324,29 @@ Best,
 
 ---
 
+## 9. Request Media Kit / Recent Work (before terms)
+
+Use when they are interested but the user has not authorized a budget range. Do not send Terms in the same note.
+
+```
+Subject: {{brand_name}} — media kit / recent collabs?
+
+---
+
+Hi {{creator_name}},
+
+Glad this might be a fit. Before we lock deliverables, could you share a media kit, rate card, or two recent brand collabs I can learn from? That helps me come back with a brief that matches how you actually work.
+
+No need to send a full SOW yet — a short reply with those materials is enough.
+
+Best,
+{{sender_name}}
+{{sender_title}}, {{sender_company}}
+{{sender_email}}
+```
+
+---
+
 ## Assembly Notes
 
 - Empty `{{fee_range}}`: delete the sentence, or use `Happy to work from your rate card.` Seeding: omit money entirely.
@@ -331,3 +354,4 @@ Best,
 - Ongoing deals: section 8. No exclusivity, MFN, or auto-renewal in a cold email.
 - Greeting: `Hi Maya,` when you have a name; infer from the handle if needed; otherwise `Hi there,` — never `Dear Influencer`. Managers: `Hi {{manager_name}},` — do not address them as the creator.
 - If the user has a brief or shipping-form URL, point the CTA there. Do not request passport, national ID, or bank details in the body.
+- Scan the draft for leftover `{{placeholders}}`. Fill what you know; list anything still wrapped in `{{ }}` under Assumptions. Never send a body that still says `{{creator_name}}` as if it were the greeting.

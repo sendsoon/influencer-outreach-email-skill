@@ -2,7 +2,7 @@
 
 [English](README.md) | **简体中文** | [日本語](README.ja.md)
 
-为海外创作者（YouTube、Instagram、TikTok 等）起草正式英文商务合作邮件。
+为海外创作者（YouTube、Instagram、TikTok 等）起草商务合作邮件。语言跟随达人市场——英语、对方语言、或双语——不再默认只出英文。
 
 Agent 应在出现合作意向时触发——influencer outreach、brand collaboration、「联系这个 YouTuber」——并返回可直接复制的 **Subject + 正文**，而不是策略备忘。
 
@@ -16,8 +16,8 @@ Agent 应在出现合作意向时触发——influencer outreach、brand collabo
 | 跟进 | 未回复时的 #2 / #3 / breakup |
 | 条款 | 交付物、档期、费用、使用权 |
 | 寄送 | 样品物流跟踪 |
-| 对方已回复 | 要 brief、报价、转经理、拒绝 |
-| 私信 | 应用内短文案（非邮件格式） |
+| 对方已回复 | 先要 media kit、再谈 brief / 报价、转经理、拒绝 |
+| 私信 | 应用内短文案；Nano / Micro 且无邮箱时优先 |
 
 ## 目录
 
@@ -138,13 +138,14 @@ macOS / Linux 使用 `ln -s`。
 ### 安装校验
 
 - 文件夹名为 `influencer-outreach-email-skill`，内含 `SKILL.md`、`references/`、`assets/`。
-- 新对话输入 “Help me partner with this YouTuber”，应返回 Subject + 英文正文。
+- 新对话输入 “Help me partner with this YouTuber”，应返回 Subject + 正文（语言跟随达人市场）。
 - Codex 的 skills 列表与 Claude Code 的 `/` 菜单中能搜到该名称。
 
 ## 输入
 
 - 品牌 / 产品及 1–2 句卖点
 - 创作者姓名、平台、内容风格（最好有一条实际看过的内容）
+- 粉丝量或预估层级（Nano / Micro / Mid / Macro）
 - 合作形式：付费 / 寄样 / 联盟 / 长期
 - 写给创作者本人还是经理 / MCN
 - 费用区间（如有）
@@ -159,7 +160,7 @@ Subject: ...
 
 ---
 
-<English email body>
+<邮件正文>
 
 ---
 
@@ -167,7 +168,7 @@ Assumptions / placeholders:
 - ...
 ```
 
-私信第一行为 `DM:`。语气：对等、专业的商务英文。避免垃圾邮件用语（`FREE`、`$$$`、`ACT NOW`）。冷启动 80–150 词；跟进更短。
+私信第一行为 `DM:`。语气：对等、专业；正式程度跟随达人量级。避免垃圾邮件用语（`FREE`、`$$$`、`ACT NOW`）。冷启动 80–150 词；跟进更短。日韩 / 拉美 / 东南亚达人：用户未指定语言时同时出英语版 + 目标语言版。
 
 ## 跟进节奏
 
@@ -194,4 +195,4 @@ Assumptions / placeholders:
 - 代发邮件、爬取或验证创作者邮箱
 - 群发同一正文（每位创作者须有独立钩子）
 - 编造视频、费用或法律条款
-- 对可能未满 18 岁的创作者做商务建联
+- 对可能未满 18 岁的创作者做商务建联（先确认年龄/监护；付费合作应咨询法务）
