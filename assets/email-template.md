@@ -1,6 +1,8 @@
 # Email Templates
 
-Replace `{{placeholders}}`; leave them in place when unknown. Do not invent facts. Language follows `SKILL.md` (English, target language, or both).
+Replace known `{{placeholders}}` with real facts. Unknown fields: natural-language stand-ins from `references/clarification.md` (e.g. “the creator” / 创作者) — never leave `{{creator_name}}` in the pasted body. The skeletons below are a **field map**; the email you return must already be rendered. Do not invent facts. Language follows `SKILL.md` (English, target language, or both).
+
+A product or collaboration brief is enough to fill the brand and proposal lines. Draft anyway when creator, hook, fee, or sender is missing.
 
 Always include a `Subject:` line. Format: `SKILL.md` → Output Format.
 
@@ -83,6 +85,11 @@ Best,
 Charles Zhou
 Partnerships, SendSoon
 charles@mail.sendsoonai.com
+
+---
+
+Assumptions / stand-ins:
+- None
 ```
 
 ---
@@ -155,6 +162,8 @@ Best,
 {{sender_title}}, {{sender_company}}
 ```
 
+If there is no real `{{new_info}}`, delete the “One update:” sentence. Do not invent a sample, window, or slot.
+
 ### Filled example (#2)
 
 ```
@@ -198,7 +207,7 @@ Best,
 
 ## 4. Collaboration Terms Confirmation
 
-Record only what both sides agreed or the user supplied. Unset items stay as placeholders and are listed in Assumptions.
+Record only what both sides agreed or the user supplied. Unset items use stand-ins from `references/clarification.md` and are listed in Assumptions.
 
 ```
 Subject: Confirming deliverables and timeline — {{brand_name}}
@@ -444,10 +453,10 @@ Do not add “I’ll check back next quarter” unless the user asked.
 
 ## Assembly Notes
 
-- Empty `{{fee_range}}`: delete the sentence, or use `Happy to work from your rate card.` Seeding: omit money entirely.
-- Affiliate: only numbers inside `{{affiliate_terms}}`. If none, write `happy to share the current affiliate terms` and flag the missing rate in Assumptions.
+- Empty `{{fee_range}}`: delete the money sentence. Do not invent a number. Seeding: omit money entirely.
+- Affiliate: only numbers the user supplied. If none, write `happy to share the current affiliate terms` and note the missing rate under Assumptions — do not invent a cookie window.
 - Ongoing deals: section 8. No exclusivity, MFN, or auto-renewal in a cold email.
-- Greeting: `Hi Arun,` when you have a name; infer from the handle if needed; otherwise `Hi there,` — never `Dear Influencer`. Managers: `Hi {{manager_name}},` — do not address them as the creator.
+- Greeting: `Hi Arun,` when you have a name; infer from the handle if needed; otherwise `Hi there,` (English) / `您好，` (Chinese) — never `Dear Influencer`, never `{{creator_name}}`. Managers: `Hi {{manager_name}},` when known; otherwise `Hi there,` / **the manager** / 经纪人.
 - One CTA per email. After they reply: thank first. Media kit = §9 (no quote yet); brief = §10; rate hold = §11 (they already quoted); decline = §12. Never invent a counter-offer.
 - If the user has a brief or shipping-form URL, point the CTA there. Do not request passport, national ID, or bank details in the body.
-- Scan the draft for leftover `{{placeholders}}`. Fill what you know; list anything still wrapped in `{{ }}` under Assumptions. Never send a body that still says `{{creator_name}}` as if it were the greeting.
+- Scan the draft for leftover `{{placeholders}}`. Replace with facts or stand-ins (`references/clarification.md`). List stand-ins under Assumptions.

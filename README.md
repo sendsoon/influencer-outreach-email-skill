@@ -10,9 +10,9 @@ Drafts copy-paste **Subject + body** for brand collaboration with overseas creat
 - If there is no reply: a second follow-up, then a closing note (max three emails per thread)
 - Terms: deliverables, window, fee, usage rights
 - Sample-shipped notices with tracking
-- Replies after they write back: thank them first, one ask per email; request a media kit / rate card before a brief; lock terms only with an authorized budget; never invent a counter-offer; after a clear no, a short thank-you and stop
+- Replies after they write back: thank them first, one ask per email; if they have not quoted and there is no authorized budget, request a media kit / rate card before a brief; after a quote, hold or lock terms — never invent a counter-offer; after a clear no, a short thank-you and stop
 
-Each draft is personalized to one creator. Missing facts: the agent asks at most 1–3 questions, then fills placeholders.
+Each draft is personalized to one creator. A product or collaboration brief is enough to draft. Extra facts enrich the email; missing ones become stand-ins (e.g. “the creator”) — do not quiz first.
 
 ## Install
 
@@ -60,6 +60,6 @@ charles@mail.sendsoonai.com
 
 ---
 
-Assumptions / placeholders:
+Assumptions / stand-ins:
 - None
 ```

@@ -5,9 +5,9 @@ Subject lines decide open rate. Creator inboxes are full of PR blasts. Write a s
 ## Rules
 
 - **Personalization over formulas.** Prefer a subject that cites a specific video, hook, or visual. Creators see `idea for a {{brand_name}} collab` all day — that shape is a fallback, not the goal.
-- Write an original line when a real content detail exists. The templates below are backups for when a specific hook is missing.
+- Write an original line when a real content detail exists. The templates below are backups for when a specific hook is missing. If no video was watched, skip templates that need `{{content_hook}}`.
 - Prefer **40–60 characters**; >70 truncates on mobile.
-- Include at least two of: creator, brand, content theme, collab type.
+- Include at least two of: creator, brand, content theme, collab type — or brand + collab if the creator’s name is unknown. Never put `{{creator_name}}` or `{{content_hook}}` in the pasted subject.
 - Noun + purpose. Few adjectives.
 - First email: no `Re:`, `Fwd:`, or `Follow-up:` (reserve Follow-up for later touches).
 - One subject per draft. List an alternate on its own line — not as an A/B essay.
@@ -66,8 +66,8 @@ Do **not** send a middle “checking in” as a fourth email. These two are only
 |------|---------|
 | YouTube paid + affiliate | `Arun — Pixel 11 small print + SendSoon` |
 | Named video | `Quick note on your Pixel 11 hands-on + SendSoon` |
-| Instagram seeding (physical product) | `{{brand_name}} × {{handle}}: product seeding` |
-| TikTok paid integration | `Paid integration idea for {{handle}}` |
+| Instagram seeding (physical product) | `Product seeding for your channel` |
+| TikTok paid integration | `Paid integration idea for your channel` |
 | Follow-up #2 | `Following up: SendSoon × Arun` |
 | Closing #3 | `Closing the loop — SendSoon` |
 | Terms | `Confirming deliverables and timeline — SendSoon` |

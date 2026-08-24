@@ -2,6 +2,8 @@
 
 No reply is not a no. Follow-ups are short, add one new fact, and do not pressure. Default cap: **three** emails including the first, then stop.
 
+Unknown names or collab types: stand-ins from `references/clarification.md` (`Hi there,` / the creator / a collaboration). Do not paste `{{placeholders}}`.
+
 ## Cadence
 
 | Touch | When | Goal | Length |
@@ -45,7 +47,7 @@ Best,
 {{sender_title}}, {{sender_company}}
 ```
 
-`{{new_info}}` examples: `we can ship a sample this week` / `April still has two integration slots` / `usage would be organic-only unless you prefer otherwise`.
+`{{new_info}}` examples: `we can ship a sample this week` / `April still has two integration slots` / `usage would be organic-only unless you prefer otherwise`. If none is true, delete the “One update:” sentence — do not invent one.
 
 ### Follow-up #3 (closing)
 

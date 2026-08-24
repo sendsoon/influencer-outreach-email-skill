@@ -56,9 +56,9 @@ Change the opener and the proposal by platform. Do not reuse “your amazing con
 
 If the platform is unspecified:
 
-1. Keep `your {{platform}} audience` and leave `{{platform}}`.
-2. Name `{{collab_type}}` only — do not list Reel + long-form + TikTok together.
-3. Mark platform unconfirmed in Assumptions.
+1. Keep **your audience** (do not invent a platform name).
+2. Name a generic **collaboration** — do not list Reel + long-form + TikTok together.
+3. Note platform unconfirmed in Assumptions.
 
 Multi-platform packages: one sentence of scope (`YouTube integration + 2 TikToks`). Leave SOW detail for the reply.
 
@@ -72,6 +72,6 @@ Multi-platform packages: one sentence of scope (`YouTube integration + 2 TikToks
 | Has a manager | Address the creator; optional `Happy to include your manager` |
 | Region / language | Follow Language in `SKILL.md`. JP / KR / LATAM / SEA: English + target-language drafts when the user did not specify |
 
-No real content watched: keep `{{content_hook}}`, note in Assumptions that the opener needs a real example, and do not invent a title.
+No real content watched: opener uses **your recent work** / 您最近的内容. Note in Assumptions. Do not invent a title. Do not delay the draft to ask for a video.
 
-Writing a manager / MCN: greet `{{manager_name}}`. First sentence is about `{{creator_name}}` / `{{handle}}`. Do not describe the creator’s video as if the manager shot it. Template: `assets/email-template.md`.
+Writing a manager / MCN: greet by name when known, otherwise `Hi there,` / **the manager**. First sentence is about **the creator** / 创作者 (or the real name/handle). Do not describe the creator’s video as if the manager shot it. Template: `assets/email-template.md`.

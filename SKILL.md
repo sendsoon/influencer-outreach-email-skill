@@ -28,18 +28,18 @@ Iterate subject lines with `references/subject-lines.md`. Affiliate, ongoing, an
 
 1. **Stage**: cold / follow-up (#2) / closing (#3) / terms / shipment / reply.
 2. **Language + tier**: infer from bio, video language, location, follower count. See Language and Creator Tier. Unknown is fine — do not block.
-3. **Gaps**: read `references/clarification.md`. Ask at most **1–3** blocking questions; otherwise draft with placeholders.
+3. **Gaps**: read `references/clarification.md`. A product or collaboration brief is enough. Missing fields become natural-language stand-ins (e.g. “the creator” / 创作者) — never `{{placeholders}}` in the pasted body. Do not ask before the first draft unless that brief is missing.
 4. **Load**: platform notes for first touch; follow-up sequence for nudges.
 5. **Draft**: Subject, then body. Default **one** primary email (Language bilingual branch excepted). For a list, **one email per creator** — never a shared blast body.
 6. **Check**: Guardrails + Quality bar, then Output format.
 
-If brand + creator + intent are present, draft immediately. Extract name and platform from profile/video URLs; do not re-ask known facts.
+If a product or collaboration intro is present, draft immediately. Extract name and platform from profile/video URLs when given; do not re-ask known facts.
 
-Use only glossary names from `assets/email-template.md` (`{{content_hook}}`, `{{new_info}}`, etc.).
+Map fields with glossary names in `assets/email-template.md`, then **render stand-ins** from `references/clarification.md` wherever a value is unknown.
 
-## Required Information
+## Input
 
-See `references/clarification.md` for when to ask vs draft, the 1–3 question cap, and the field map.
+See `references/clarification.md`. Required: product / collaboration context. Everything else is optional and becomes a stand-in if missing.
 
 Do not invent fees, video titles, follower counts, deadlines, or legal terms.
 
@@ -47,11 +47,11 @@ Do not invent fees, video titles, follower counts, deadlines, or legal terms.
 
 Cold outreach: **80–150 words** (TikTok: 70–110).
 
-1. **Opener (1–2 sentences)** — a verifiable detail from their work. Never “I love your content.” If no hook exists, keep `{{content_hook}}`; do not fabricate titles.
+1. **Opener (1–2 sentences)** — a verifiable detail from their work. Never “I love your content.” If no hook exists, use **your recent work** / 您最近的内容; do not fabricate titles.
 2. **Brand (1–2 sentences)** — what it is and why it fits. No company history, no feature dump.
 3. **Proposal + value** — collab type, rough deliverable, what they get (fee, product, audience fit, creative control).
 4. **Single CTA** — default: a short reply.
-5. **Sign-off** — name, title, company, email; calendar link only if the CTA is a call. Plain text only.
+5. **Sign-off** — name, title, company, email when known. If missing, use stand-ins from `references/clarification.md` (e.g. Partnerships + brand name; omit an unknown email). Calendar link only if the CTA is a call. Plain text only.
 
 Do not: long brand stories, multiple CTAs, attachment dumps, or “let’s hop on a 30-min call” unless requested.
 
@@ -61,7 +61,7 @@ Templates: `assets/email-template.md`. Paid / affiliate / follow-up / terms fill
 
 Short, specific, peer-to-peer. Prefer 40–60 characters. Do not fake a thread with `Re:` / `Fwd:` on a first email.
 
-**Personalization over formulas.** If a real content detail exists, write an original subject that cites it. The lines below are fallbacks — use them only when a specific hook is missing.
+**Personalization over formulas.** If a real content detail exists, write an original subject that cites it. The lines below are fallbacks — use them only when a specific hook is missing. If the creator’s name is unknown, omit it (`Idea for a SendSoon collab` shape) — do not write `{{creator_name}}` into the subject. If no video was watched, do not write `{{content_hook}}`; use a brand + collab fallback instead.
 
 1. `{{creator_name}} — idea for a {{brand_name}} collab`
 2. `Quick note on {{content_hook}} + {{brand_name}}`
@@ -91,9 +91,9 @@ Creator market/language is clear from bio, video language, or location, and the 
 
 - English-speaking markets (US, UK, AU, CA, etc.): English.
 - JP, KR, LATAM, SEA, or other clearly non-English: return **both** an English draft and a target-language draft. Native-language outreach usually converts better, especially Nano/Micro. Do **not** ship English-only plus “business language unconfirmed.”
-- Mixed or unclear: if a question slot remains, ask. Otherwise English, and note that a native-language version may convert better.
+- Mixed or unclear: English, and note that a native-language version may convert better. Do not ask.
 
-Never invent fluency. Keep `{{placeholders}}` identical across both drafts.
+Never invent fluency. Keep stand-ins consistent in meaning across both drafts (e.g. “the creator” ↔ 创作者).
 
 ## Creator Tier
 
@@ -115,7 +115,7 @@ Use only if there is no reply and no explicit no.
 | Touch | When | Shape |
 |------|------|--------|
 | #1 | Day 0 | Full structure, 80–150 words |
-| #2 | 3–5 days later | Second follow-up. Shorter; one new fact (sample, window, brief) |
+| #2 | 3–5 days later | Second follow-up. Shorter; one new fact if you have one (otherwise skip the update sentence) |
 | #3 | 4–7 days after #2 | Closing note. Close the loop; then stop |
 
 Max **three** emails per thread, then stop. Do not ask “did you get this?” or fake scarcity. Copy: `references/follow-up-sequence.md`.
@@ -129,15 +129,16 @@ Templates: `assets/email-template.md` (media kit, brief confirm, rate hold, decl
 ### How to answer
 
 **Interested / “sounds good” / “send more”**
-- No authorized budget: do **not** send Terms or a priced brief. Thank them, then request a media kit, rate card, or 1–2 recent brand collabs so the next note matches how they actually work.
+- No authorized budget, **and they have not sent a rate**: do **not** send Terms or a priced brief. Thank them, then request a media kit, rate card, or 1–2 recent brand collabs so the next note matches how they actually work.
+- They already quoted: do **not** request a media kit. Use the rate-card path below.
 - Budget already authorized: thank them, restating collab type + platform in one line. If deliverables are already agreed, use Terms. If not, send a short brief (talking points, not a script). One CTA: confirm the direction or reply with changes.
 
 **They ask for a brief**
 - A brief is 4–8 talking points plus the proposed deliverable (e.g. one dedicated integration). It is not a contract and not a feature dump.
-- Include only user-supplied facts: product claims, must-says, banned claims, usage, exclusivity, deadlines. Unknown items stay as placeholders or “I’ll confirm and follow up.”
+- Include only user-supplied facts: product claims, must-says, banned claims, usage, exclusivity, deadlines. Unknown items: use stand-ins from `references/clarification.md`, or “I’ll confirm and follow up.”
 - Creative control: they keep their format; you provide talking points, not a word-for-word script unless the user insisted.
 - CTA: `Does this direction work? Happy to adjust before we lock dates.`
-- If budget is still missing, request a media kit **instead of** sending a fake-priced brief.
+- If budget is still missing **and they have not quoted**, request a media kit **instead of** sending a fake-priced brief. If they already quoted, use the rate-hold path, not a media-kit ask.
 
 **They send a rate / rate card**
 - Repeat their figure in the draft so the user sees it. List it under Assumptions.
@@ -194,7 +195,7 @@ Subject: {{subject}}
 
 ---
 
-Assumptions / placeholders:
+Assumptions / stand-ins:
 - ...
 ```
 
@@ -205,8 +206,8 @@ Optional: one alternate subject on a single line.
 ## Quality Bar
 
 - [ ] Subject and full body
-- [ ] Every `{{placeholder}}` is filled or explicitly left and listed under Assumptions
-- [ ] Opener proves the content was watched, or `{{content_hook}}` is still marked
+- [ ] No leftover `{{placeholders}}` in Subject or body; missing fields use stand-ins and are listed under Assumptions
+- [ ] Opener proves the content was watched, or uses “your recent work” / 您最近的内容
 - [ ] Brand blurb ≤ 2 sentences
 - [ ] One CTA
 - [ ] No spam words, no ALL CAPS, ≤ 1 exclamation mark
@@ -219,7 +220,7 @@ Optional: one alternate subject on a single line.
 
 - Subject lines: `references/subject-lines.md`
 - Follow-up cadence: `references/follow-up-sequence.md`
-- Clarification (what to ask): `references/clarification.md`
+- Clarification (required vs optional): `references/clarification.md`
 - YouTube / Instagram / TikTok: `references/platform-notes.md`
 - Templates: `assets/email-template.md`
 - Install: `README.md`
