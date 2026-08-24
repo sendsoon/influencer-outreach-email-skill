@@ -120,38 +120,6 @@ npx skills add sendsoon/influencer-outreach-email-skill
 
 ユーザーレベルは `-g`。`--agent` の値は `npx skills --help` で確認してください。
 
-### ローカル開発（1 つのチェックアウト、複数クライアント）
-
-```powershell
-$src = (Resolve-Path .).Path
-$dests = @(
-  "$env:USERPROFILE\.codex\skills\influencer-outreach-email-skill",
-  "$env:USERPROFILE\.agents\skills\influencer-outreach-email-skill",
-  "$env:USERPROFILE\.claude\skills\influencer-outreach-email-skill"
-)
-foreach ($d in $dests) {
-  New-Item -ItemType Directory -Force (Split-Path $d) | Out-Null
-  if (Test-Path $d) { Remove-Item -Recurse -Force $d }
-  cmd /c mklink /J "$d" "$src"
-}
-```
-
-macOS / Linux では `ln -s` を使います。
-
-### チームリポジトリ
-
-| 対象 | パス |
-|------|------|
-| Codex | `.agents/skills/influencer-outreach-email-skill/` |
-| Claude Code | `.claude/skills/influencer-outreach-email-skill/` |
-| Codex + Claude Code | 上記の両方（複製またはリンク） |
-
-### 動作確認
-
-- フォルダ名が `influencer-outreach-email-skill` で、`SKILL.md`、`references/`、`assets/` があること。
-- 新しいチャットで “Help me partner with this YouTuber” と入力し、Subject + 本文が返ること（言語はクリエイターの市場に従う）。
-- Codex の skills 一覧と Claude Code の `/` メニューに名前が出ること。
-
 ## 入力
 
 - ブランド／製品と 1–2 文の価値提案

@@ -120,38 +120,6 @@ npx skills add sendsoon/influencer-outreach-email-skill
 
 用户级安装加 `-g`。`--agent` 取值以 `npx skills --help` 为准。
 
-### 本地开发（一份代码，多个客户端）
-
-```powershell
-$src = (Resolve-Path .).Path
-$dests = @(
-  "$env:USERPROFILE\.codex\skills\influencer-outreach-email-skill",
-  "$env:USERPROFILE\.agents\skills\influencer-outreach-email-skill",
-  "$env:USERPROFILE\.claude\skills\influencer-outreach-email-skill"
-)
-foreach ($d in $dests) {
-  New-Item -ItemType Directory -Force (Split-Path $d) | Out-Null
-  if (Test-Path $d) { Remove-Item -Recurse -Force $d }
-  cmd /c mklink /J "$d" "$src"
-}
-```
-
-macOS / Linux 使用 `ln -s`。
-
-### 团队仓库
-
-| 使用方 | 路径 |
-|--------|------|
-| Codex | `.agents/skills/influencer-outreach-email-skill/` |
-| Claude Code | `.claude/skills/influencer-outreach-email-skill/` |
-| Codex + Claude Code | 上述两个路径都放（复制或链接） |
-
-### 安装校验
-
-- 文件夹名为 `influencer-outreach-email-skill`，内含 `SKILL.md`、`references/`、`assets/`。
-- 新对话输入 “Help me partner with this YouTuber”，应返回 Subject + 正文（语言跟随达人市场）。
-- Codex 的 skills 列表与 Claude Code 的 `/` 菜单中能搜到该名称。
-
 ## 输入
 
 - 品牌 / 产品及 1–2 句卖点

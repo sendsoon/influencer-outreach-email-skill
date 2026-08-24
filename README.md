@@ -120,38 +120,6 @@ npx skills add sendsoon/influencer-outreach-email-skill
 
 Use `-g` for user-level install. Confirm `--agent` values with `npx skills --help`.
 
-### Local development (one checkout, several clients)
-
-```powershell
-$src = (Resolve-Path .).Path
-$dests = @(
-  "$env:USERPROFILE\.codex\skills\influencer-outreach-email-skill",
-  "$env:USERPROFILE\.agents\skills\influencer-outreach-email-skill",
-  "$env:USERPROFILE\.claude\skills\influencer-outreach-email-skill"
-)
-foreach ($d in $dests) {
-  New-Item -ItemType Directory -Force (Split-Path $d) | Out-Null
-  if (Test-Path $d) { Remove-Item -Recurse -Force $d }
-  cmd /c mklink /J "$d" "$src"
-}
-```
-
-macOS / Linux: `ln -s`.
-
-### Team repos
-
-| Audience | Path |
-|----------|------|
-| Codex | `.agents/skills/influencer-outreach-email-skill/` |
-| Claude Code | `.claude/skills/influencer-outreach-email-skill/` |
-| Codex + Claude Code | Both paths (copy or link) |
-
-### Verify
-
-- Folder name is `influencer-outreach-email-skill` and contains `SKILL.md`, `references/`, `assets/`.
-- New chat: “Help me partner with this YouTuber” should return Subject + body (language follows the creator’s market).
-- The name appears in Codex skills and the Claude Code `/` menu.
-
 ## Inputs
 
 - Brand / product and 1–2 sentence value proposition
